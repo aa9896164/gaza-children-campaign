@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معاً من أجل أطفال غزة - حملة التبرعات الإنسانية</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ساعد أطفال غزة المحتاجين. حملة تبرعات إنسانية شفافة وموثقة لتوفير الطعام والدواء والمأوى للأطفال الأبرياء.">
+    <meta name="keywords" content="تبرعات غزة, مساعدة أطفال, حملة خيرية, تبرع إنساني, أطفال فلسطين">
+    <meta name="author" content="حملة أطفال غزة">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="معاً من أجل أطفال غزة - حملة التبرعات الإنسانية">
+    <meta property="og:description" content="ساعد أطفال غزة المحتاجين. كل تبرع يحدث فرقاً حقيقياً في حياة الأطفال الأبرياء.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="معاً من أجل أطفال غزة">
+    <meta name="twitter:description" content="ساعد أطفال غزة المحتاجين. حملة تبرعات إنسانية شفافة.">
+    
+    <!-- Google Analytics - Replace with your actual Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        // Replace G-XXXXXXXXXX with your actual Measurement ID from Google Analytics
+        const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // ⚠️ UPDATE THIS WITH YOUR ACTUAL ID
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', GA_MEASUREMENT_ID);
+        
+        // Track donation button clicks
+        function trackDonationClick(source) {
+            gtag('event', 'click', {
+                'event_category': 'donation',
+                'event_label': source,
+                'value': 1
+            });
+        }
+        
+        // Track language changes
+        function trackLanguageChange(language) {
+            gtag('event', 'language_change', {
+                'event_category': 'engagement',
+                'event_label': language
+            });
+        }
+        
+        // Track social shares
+        function trackSocialShare(platform) {
+            gtag('event', 'share', {
+                'event_category': 'social',
+                'event_label': platform
+            });
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            transition: all 0.3s ease;
+        }
+
+        body.en {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            direction: ltr;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid transparent;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .lang-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            margin-top: 60px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a5a);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transform: translateY(0);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 107, 107, 0.4);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .donation-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .chuffed-iframe-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .chuffed-iframe-container iframe {
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .donation-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .donation-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .donation-button:hover::before {
+            left: 100%;
+        }
+
+        .donation-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(76, 175, 80, 0.4);
+        }
+
+        .impact-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .impact-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .impact-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+        }
+
+        .impact-card:hover::before {
+            right: -30%;
+        }
+
+        .impact-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .social-proof {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .testimonial {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #555;
+            margin: 20px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .urgency-banner {
+            background: linear-gradient(135deg, #ff4757, #ff3742);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .share-btn.whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+
+        .share-btn.facebook {
+            background: linear-gradient(135deg, #4267B2, #365899);
+        }
+
+        .share-btn.twitter {
+            background: linear-gradient(135deg, #1DA1F2, #0d8bd9);
+        }
+
+        .share-btn.telegram {
+            background: linear-gradient(135deg, #0088cc, #006bb3);
+        }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hidden content for different languages */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-section,
+            .donation-section,
+            .impact-section,
+            .social-proof {
+                padding: 25px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+            }
+            
+            .donation-button {
+                padding: 15px 30px;
+                font-size: 1.2rem;
+                margin: 10px 5px;
+            }
+
+            .language-switcher {
+                position: relative;
+                top: 0;
+                right: 0;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            .chuffed-iframe-container iframe {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+
+        .progress-bar {
+            background: #e0e0e0;
+            border-radius: 25px;
+            padding: 3px;
+            margin: 20px 0;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-fill {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            height: 30px;
+            border-radius: 25px;
+            width: 65%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: width 2s ease-in-out;
+            animation: progressAnimation 2s ease-in-out;
+        }
+
+        @keyframes progressAnimation {
+            from { width: 0%; }
+            to { width: 65%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <a href="#" class="lang-btn active" onclick="switchLanguage('ar')" data-lang="ar">العربية</a>
+        <a href="#" class="lang-btn" onclick="switchLanguage('en')" data-lang="en">English</a>
+        <a href="#" class="lang-btn" onclick="switchLanguage('fr')" data-lang="fr">Français</a>
+        <a href="#" class="lang-btn" onclick="switchLanguage('es')" data-lang="es">Español</a>
+    </div>
+
+    <div class="container">
+        <!-- Arabic Content -->
+        <div class="lang-content active" id="content-ar">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>معاً من أجل أطفال غزة</h1>
+                    <p class="subtitle">كن جزءاً من الأمل - ساهم في إنقاذ حياة الأطفال الأبرياء</p>
+                    
+                    <div class="urgency-banner">
+                        ⏰ الوقت ينفد - كل دقيقة تحسب في إنقاذ الأرواح
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="progress-bar">
+                        <div class="progress-fill">
+                            تم جمع 65% من الهدف
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">2.3M</div>
+                    <div class="stat-label">طفل يحتاج المساعدة</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">متبرع كريم</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">مساعدة مستمرة</div>
+                </div>
+            </div>
+
+            <!-- Donation Section -->
+            <div class="donation-section">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">تبرع الآن وأحدث الفرق</h2>
+                
+                <!-- Chuffed iframe -->
+                <div class="chuffed-iframe-container">
+                    <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+                    
+                    <!-- Fallback if iframe doesn't work -->
+                    <div style="margin-top: 20px;">
+                        <p style="color: #666; margin-bottom: 15px;">إذا لم يظهر الإطار أعلاه، يمكنك التبرع مباشرة:</p>
+                        <a href="https://chuffed.org/project/124859-gaza-children-emergency-relief" target="_blank" class="donation-button" onclick="trackDonationClick('chuffed_fallback_ar')">
+                            💝 تبرع الآن عبر Chuffed
+                        </a>
+                    </div>
+                </div>
+                
+                <div style="margin: 30px 0; font-size: 1.1rem; color: #555;">
+                    <p><strong>مبالغ التبرع المقترحة:</strong></p>
+                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+                        <span style="background: #f39c12; color: white; padding: 10px 20px; border-radius: 25px;">$25</span>
+                        <span style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 25px;">$50</span>
+                        <span style="background: #9b59b6; color: white; padding: 10px 20px; border-radius: 25px;">$100</span>
+                        <span style="background: #1abc9c; color: white; padding: 10px 20px; border-radius: 25px;">$200</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="impact-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">تأثير تبرعك</h2>
+                
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🍞 $25</h3>
+                        <p>توفر وجبات غذائية لطفل لمدة أسبوع كامل</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">💊 $50</h3>
+                        <p>توفر الأدوية الأساسية والمستلزمات الطبية الضرورية</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🏠 $100</h3>
+                        <p>توفر مأوى مؤقت آمن لعائلة نازحة</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
+                        <p>توفر مستلزمات تعليمية وأدوات مدرسية لعشرات الأطفال</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="social-proof">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">شهادات المتبرعين</h2>
+                
+                <div class="testimonial">
+                    "شعرت بسعادة غامرة عندما ساهمت في هذه الحملة. كل ريال يذهب لمساعدة الأطفال الأبرياء"
+                </div>
+                
+                <div class="testimonial">
+                    "الشفافية في هذه الحملة مميزة. أرى بوضوح كيف تُستخدم تبرعاتي لمساعدة الأطفال"
+                </div>
+                
+                <div class="testimonial">
+                    "أدعو كل من يستطيع المساهمة أن يفعل ذلك. الأطفال يحتاجون مساعدتنا الآن"
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">شارك الحملة مع أصدقائك</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp('ar')">
+                        📱 واتساب
+                    </a>
+                    <a href="#" class="share-btn facebook" onclick="shareFacebook()">
+                        📘 فيسبوك
+                    </a>
+                    <a href="#" class="share-btn twitter" onclick="shareTwitter('ar')">
+                        🐦 تويتر
+                    </a>
+                    <a href="#" class="share-btn telegram" onclick="shareTelegram('ar')">
+                        ✈️ تيليجرام
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <h3>شكراً لك على اهتمامك ومساعدتك</h3>
+                <p>معاً نستطيع إحداث الفرق في حياة الأطفال</p>
+                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                    هذه حملة خيرية شفافة وموثقة | جميع التبرعات تذهب مباشرة للمحتاجين
+                </p>
+            </div>
+        </div>
+
+        <!-- English Content -->
+        <div class="lang-content" id="content-en">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Together for Gaza's Children</h1>
+                    <p class="subtitle">Be part of hope - Help save innocent children's lives</p>
+                    
+                    <div class="urgency-banner">
+                        ⏰ Time is running out - Every minute counts in saving lives
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="progress-bar">
+                        <div class="progress-fill">
+                            65% of goal reached
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">2.3M</div>
+                    <div class="stat-label">Children need help</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Generous donors</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Continuous aid</div>
+                </div>
+            </div>
+
+            <!-- Donation Section -->
+            <div class="donation-section">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Donate Now and Make a Difference</h2>
+                
+                <!-- Chuffed iframe -->
+                <div class="chuffed-iframe-container">
+                    <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+                    
+                    <!-- Fallback if iframe doesn't work -->
+                    <div style="margin-top: 20px;">
+                        <p style="color: #666; margin-bottom: 15px;">If the frame above doesn't appear, you can donate directly:</p>
+                        <a href="https://chuffed.org/project/124859-gaza-children-emergency-relief" target="_blank" class="donation-button">
+                            💝 Donate Now via Chuffed
+                        </a>
+                    </div>
+                </div>
+                
+                <div style="margin: 30px 0; font-size: 1.1rem; color: #555;">
+                    <p><strong>Suggested donation amounts:</strong></p>
+                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+                        <span style="background: #f39c12; color: white; padding: 10px 20px; border-radius: 25px;">$25</span>
+                        <span style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 25px;">$50</span>
+                        <span style="background: #9b59b6; color: white; padding: 10px 20px; border-radius: 25px;">$100</span>
+                        <span style="background: #1abc9c; color: white; padding: 10px 20px; border-radius: 25px;">$200</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="impact-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Your Impact</h2>
+                
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🍞 $25</h3>
+                        <p>Provides meals for a child for one full week</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">💊 $50</h3>
+                        <p>Provides essential medicines and medical supplies</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🏠 $100</h3>
+                        <p>Provides temporary safe shelter for a displaced family</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
+                        <p>Provides educational supplies and school materials for dozens of children</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="social-proof">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Donor Testimonials</h2>
+                
+                <div class="testimonial">
+                    "I felt immense joy when I contributed to this campaign. Every dollar goes to help innocent children"
+                </div>
+                
+                <div class="testimonial">
+                    "The transparency in this campaign is outstanding. I can clearly see how my donations are being used to help children"
+                </div>
+                
+                <div class="testimonial">
+                    "I urge everyone who can contribute to do so. Children need our help now"
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">Share the campaign with your friends</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp('en')">
+                        📱 WhatsApp
+                    </a>
+                    <a href="#" class="share-btn facebook" onclick="shareFacebook()">
+                        📘 Facebook
+                    </a>
+                    <a href="#" class="share-btn twitter" onclick="shareTwitter('en')">
+                        🐦 Twitter
+                    </a>
+                    <a href="#" class="share-btn telegram" onclick="shareTelegram('en')">
+                        ✈️ Telegram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <h3>Thank you for your care and assistance</h3>
+                <p>Together we can make a difference in children's lives</p>
+                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                    This is a transparent and documented charity campaign | All donations go directly to those in need
+                </p>
+            </div>
+        </div>
+
+        <!-- French Content -->
+        <div class="lang-content" id="content-fr">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Ensemble pour les Enfants de Gaza</h1>
+                    <p class="subtitle">Faites partie de l'espoir - Aidez à sauver des vies d'enfants innocents</p>
+                    
+                    <div class="urgency-banner">
+                        ⏰ Le temps presse - Chaque minute compte pour sauver des vies
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="progress-bar">
+                        <div class="progress-fill">
+                            65% de l'objectif atteint
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                            <!-- Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">2.3M</div>
+                    <div class="stat-label">Enfants ont besoin d'aide</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Donateurs généreux</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Aide continue</div>
+                </div>
+            </div>
+
+            <!-- Donation Section -->
+            <div class="donation-section">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Faites un Don Maintenant</h2>
+                
+                <!-- Chuffed iframe -->
+                <div class="chuffed-iframe-container">
+                    <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+                    
+                    <!-- Fallback if iframe doesn't work -->
+                    <div style="margin-top: 20px;">
+                        <p style="color: #666; margin-bottom: 15px;">Si le cadre ci-dessus n'apparaît pas, vous pouvez faire un don directement:</p>
+                        <a href="https://chuffed.org/project/124859-gaza-children-emergency-relief" target="_blank" class="donation-button" onclick="trackDonationClick('chuffed_fallback_fr')">
+                            💝 Faire un Don via Chuffed
+                        </a>
+                    </div>
+                </div>
+                
+                <div style="margin: 30px 0; font-size: 1.1rem; color: #555;">
+                    <p><strong>Montants de don suggérés:</strong></p>
+                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+                        <span style="background: #f39c12; color: white; padding: 10px 20px; border-radius: 25px;">$25</span>
+                        <span style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 25px;">$50</span>
+                        <span style="background: #9b59b6; color: white; padding: 10px 20px; border-radius: 25px;">$100</span>
+                        <span style="background: #1abc9c; color: white; padding: 10px 20px; border-radius: 25px;">$200</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="impact-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Votre Impact</h2>
+                
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🍞 $25</h3>
+                        <p>Fournit des repas pour un enfant pendant une semaine complète</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">💊 $50</h3>
+                        <p>Fournit des médicaments essentiels et des fournitures médicales</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🏠 $100</h3>
+                        <p>Fournit un abri temporaire sûr pour une famille déplacée</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
+                        <p>Fournit du matériel éducatif et scolaire pour des dizaines d'enfants</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="social-proof">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Témoignages de Donateurs</h2>
+                
+                <div class="testimonial">
+                    "J'ai ressenti une immense joie en contribuant à cette campagne. Chaque dollar aide les enfants innocents"
+                </div>
+                
+                <div class="testimonial">
+                    "La transparence de cette campagne est remarquable. Je peux clairement voir comment mes dons sont utilisés"
+                </div>
+                
+                <div class="testimonial">
+                    "J'encourage tous ceux qui peuvent contribuer à le faire. Les enfants ont besoin de notre aide maintenant"
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">Partagez la campagne avec vos amis</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp('fr')">
+                        📱 WhatsApp
+                    </a>
+                    <a href="#" class="share-btn facebook" onclick="shareFacebook()">
+                        📘 Facebook
+                    </a>
+                    <a href="#" class="share-btn twitter" onclick="shareTwitter('fr')">
+                        🐦 Twitter
+                    </a>
+                    <a href="#" class="share-btn telegram" onclick="shareTelegram('fr')">
+                        ✈️ Telegram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <h3>Merci pour votre attention et votre aide</h3>
+                <p>Ensemble, nous pouvons faire la différence dans la vie des enfants</p>
+                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                    Campagne caritative transparente et documentée | Tous les dons vont directement aux personnes dans le besoin
+                </p>
+            </div>
+        </div>
+
+        <!-- Spanish Content -->
+        <div class="lang-content" id="content-es">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Juntos por los Niños de Gaza</h1>
+                    <p class="subtitle">Sé parte de la esperanza - Ayuda a salvar vidas de niños inocentes</p>
+                    
+                    <div class="urgency-banner">
+                        ⏰ El tiempo se agota - Cada minuto cuenta para salvar vidas
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="progress-bar">
+                        <div class="progress-fill">
+                            65% del objetivo alcanzado
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">2.3M</div>
+                    <div class="stat-label">Niños necesitan ayuda</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Donantes generosos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Ayuda continua</div>
+                </div>
+            </div>
+
+            <!-- Donation Section -->
+            <div class="donation-section">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Dona Ahora y Marca la Diferencia</h2>
+                
+                <!-- Chuffed iframe -->
+                <div class="chuffed-iframe-container">
+                    <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+                    
+                    <!-- Fallback if iframe doesn't work -->
+                    <div style="margin-top: 20px;">
+                        <p style="color: #666; margin-bottom: 15px;">Si el marco de arriba no aparece, puedes donar directamente:</p>
+                        <a href="https://chuffed.org/project/124859-gaza-children-emergency-relief" target="_blank" class="donation-button" onclick="trackDonationClick('chuffed_fallback_es')">
+                            💝 Donar Ahora vía Chuffed
+                        </a>
+                    </div>
+                </div>
+                
+                <div style="margin: 30px 0; font-size: 1.1rem; color: #555;">
+                    <p><strong>Cantidades de donación sugeridas:</strong></p>
+                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+                        <span style="background: #f39c12; color: white; padding: 10px 20px; border-radius: 25px;">$25</span>
+                        <span style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 25px;">$50</span>
+                        <span style="background: #9b59b6; color: white; padding: 10px 20px; border-radius: 25px;">$100</span>
+                        <span style="background: #1abc9c; color: white; padding: 10px 20px; border-radius: 25px;">$200</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="impact-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Tu Impacto</h2>
+                
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🍞 $25</h3>
+                        <p>Proporciona comidas para un niño durante una semana completa</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">💊 $50</h3>
+                        <p>Proporciona medicinas esenciales y suministros médicos</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🏠 $100</h3>
+                        <p>Proporciona refugio temporal seguro para una familia desplazada</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
+                        <p>Proporciona suministros educativos y materiales escolares para decenas de niños</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="social-proof">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Testimonios de Donantes</h2>
+                
+                <div class="testimonial">
+                    "Sentí una inmensa alegría al contribuir a esta campaña. Cada dólar ayuda a niños inocentes"
+                </div>
+                
+                <div class="testimonial">
+                    "La transparencia en esta campaña es excepcional. Puedo ver claramente cómo se usan mis donaciones"
+                </div>
+                
+                <div class="testimonial">
+                    "Animo a todos los que puedan contribuir a hacerlo. Los niños necesitan nuestra ayuda ahora"
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">Comparte la campaña con tus amigos</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp('es')">
+                        📱 WhatsApp
+                    </a>
+                    <a href="#" class="share-btn facebook" onclick="shareFacebook()">
+                        📘 Facebook
+                    </a>
+                    <a href="#" class="share-btn twitter" onclick="shareTwitter('es')">
+                        🐦 Twitter
+                    </a>
+                    <a href="#" class="share-btn telegram" onclick="shareTelegram('es')">
+                        ✈️ Telegram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <h3>Gracias por tu atención y ayuda</h3>
+                <p>Juntos podemos hacer la diferencia en las vidas de los niños</p>
+                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                    Campaña benéfica transparente y documentada | Todas las donaciones van directamente a los necesitados
+                </p>
+            </div>
+        </div>
