@@ -1,55 +1,4 @@
-<!-- Contact Section -->
-            <div class="contact-section">
-                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">💬 لديك سؤال؟ تواصل معنا</h2>
-                
-                <div class="contact-form">
-                    <form id="contactForm" onsubmit="submitForm(event)">
-                        <div class="form-group">
-                            <label for="name">الاسم الكامل *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">البريد الإلكتروني *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">رقم الهاتف (اختياري)</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">موضوع الاستفسار *</label>
-                            <select id="subject" name="subject" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; background: #f8f9fa;">
-                                <option value="">اختر الموضوع</option>
-                                <option value="donation">استفسار عن التبرع</option>
-                                <option value="impact">كيفية استخدام التبرعات</option>
-                                <option value="volunteer">التطوع معنا</option>
-                                <option value="partnership">شراكة أو رعاية</option>
-                                <option value="media">استفسار إعلامي</option>
-                                <option value="other">أخرى</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">رسالتك *</label>
-                            <textarea id="message" name="message" placeholder="اكتب سؤالك أو استفسارك هنا..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-button">📧 إرسال الرسالة</button>
-                    </form>
-                    
-                    <div style="margin-top: 30px; text-align: center; color: #666;">
-                        <p><strong>📞 طرق التواصل الأخرى:</strong></p>
-                        <p>📧 البريد الإلكتروني: info@hope4gaza.org</p>
-                        <p>📱 واتساب: <a href="https://wa.me/1234567890" style="color: #25D366;">+1 234 567 890</a></p>
-                        <p>🕐 أوقات الرد: 24/7 (نرد خلال 24 ساعة)</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Social Proof -->
+<!-- Social Proof -->
             <div class="social-proof">
                 <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">شهادات المتبرعين</h2>
                 
@@ -82,6 +31,51 @@
                     <button class="share-btn telegram" onclick="shareTelegram('ar')">
                         ✈️ تيليجرام
                     </button>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">💬 لديك سؤال؟ تواصل معنا</h2>
+                
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">موضوع الاستفسار *</label>
+                            <select id="subject" name="subject" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; background: #f8f9fa;">
+                                <option value="">اختر الموضوع</option>
+                                <option value="donation">استفسار عن التبرع</option>
+                                <option value="impact">كيفية استخدام التبرعات</option>
+                                <option value="volunteer">التطوع معنا</option>
+                                <option value="partnership">شراكة أو رعاية</option>
+                                <option value="media">استفسار إعلامي</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">رسالتك *</label>
+                            <textarea id="message" name="message" placeholder="اكتب سؤالك أو استفسارك هنا..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">📧 إرسال الرسالة</button>
+                    </form>
+                    
+                    <div style="margin-top: 30px; text-align: center; color: #666;">
+                        <p><strong>📞 طرق التواصل الأخرى:</strong></p>
+                        <p>📧 البريد الإلكتروني: <a href="mailto:aa9896164@gmail.com" style="color: #4CAF50;">aa9896164@gmail.com</a></p>
+                        <p>🕐 أوقات الرد: 24/7 (نرد خلال 24 ساعة)</p>
+                    </div>
                 </div>
             </div>
 
@@ -153,43 +147,51 @@
                     <!-- PayPal Option -->
                     <div class="payment-card">
                         <h3 style="color: #2c3e50; margin-bottom: 20px;">💳 Direct Donation - PayPal</h3>
-                        <p style="color: #666; margin-bottom: 20px;">Donate directly and securely via PayPal</p>
+                        <p style="color: #666; margin-bottom: 20px;">Donate directly and securely via PayPal without leaving the site</p>
                         
-                        <!-- PayPal Buttons for different amounts -->
-                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0;">
-                            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_25" />
-                                <button type="submit" class="donation-button" onclick="trackDonationClick('paypal_25_en')" style="width: 100%; font-size: 1rem; padding: 15px;">
-                                    $25 💝
+                        <!-- PayPal Amount Selection -->
+                        <div style="margin: 20px 0;">
+                            <label style="display: block; margin-bottom: 10px; font-weight: bold; color: #2c3e50;">Select donation amount:</label>
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 15px;">
+                                <button class="amount-btn" onclick="selectAmount(25)" data-amount="25" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
+                                    $25
                                 </button>
-                            </form>
-                            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_50" />
-                                <button type="submit" class="donation-button" onclick="trackDonationClick('paypal_50_en')" style="width: 100%; font-size: 1rem; padding: 15px;">
-                                    $50 💝
+                                <button class="amount-btn" onclick="selectAmount(50)" data-amount="50" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
+                                    $50
                                 </button>
-                            </form>
-                            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_100" />
-                                <button type="submit" class="donation-button" onclick="trackDonationClick('paypal_100_en')" style="width: 100%; font-size: 1rem; padding: 15px;">
-                                    $100 💝
+                                <button class="amount-btn" onclick="selectAmount(100)" data-amount="100" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
+                                    $100
                                 </button>
-                            </form>
-                            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_200" />
-                                <button type="submit" class="donation-button" onclick="trackDonationClick('paypal_200_en')" style="width: 100%; font-size: 1rem; padding: 15px;">
-                                    $200 💝
+                                <button class="amount-btn" onclick="selectAmount(200)" data-amount="200" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
+                                    $200
                                 </button>
-                            </form>
+                            </div>
+                            
+                            <!-- Custom Amount Input -->
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; margin-bottom: 8px; color: #2c3e50;">Or enter a custom amount:</label>
+                                <input type="number" id="customAmountEn" placeholder="e.g., 75" min="1" max="10000" style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px;" oninput="selectCustomAmount()">
+                            </div>
                         </div>
                         
-                        <!-- Custom Amount PayPal -->
-                        <form action="https://www.paypal.com/donate" method="post" target="_top">
-                            <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_CUSTOM_BUTTON_ID" />
-                            <button type="submit" class="donation-button paypal-button" onclick="trackDonationClick('paypal_custom_en')" style="width: 100%;">
-                                💳 Donate Custom Amount via PayPal
-                            </button>
-                        </form>
+                        <!-- PayPal Buttons Container -->
+                        <div id="paypal-button-container-en" style="margin: 20px 0;"></div>
+                        
+                        <!-- Selected Amount Display -->
+                        <div id="selected-amount-en" style="text-align: center; margin: 15px 0; font-size: 18px; font-weight: bold; color: #4CAF50; display: none;">
+                            Selected amount: $<span id="amount-display-en">25</span>
+                        </div>
+                        
+                        <!-- Fallback Links -->
+                        <div style="margin-top: 20px; text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;">
+                            <p style="margin-bottom: 15px; font-weight: bold;">💡 Alternative donation methods:</p>
+                            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                                <a href="https://paypal.me/hope4gaza/25" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$25</a>
+                                <a href="https://paypal.me/hope4gaza/50" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$50</a>
+                                <a href="https://paypal.me/hope4gaza/100" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$100</a>
+                                <a href="https://paypal.me/hope4gaza" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">Custom</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -224,57 +226,6 @@
                     <div class="impact-card">
                         <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
                         <p>Provides educational supplies and school materials for dozens of children</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Section -->
-            <div class="contact-section">
-                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">💬 Have a Question? Contact Us</h2>
-                
-                <div class="contact-form">
-                    <form id="contactFormEn" onsubmit="submitForm(event)">
-                        <div class="form-group">
-                            <label for="nameEn">Full Name *</label>
-                            <input type="text" id="nameEn" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="emailEn">Email Address *</label>
-                            <input type="email" id="emailEn" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phoneEn">Phone Number (Optional)</label>
-                            <input type="tel" id="phoneEn" name="phone">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subjectEn">Inquiry Subject *</label>
-                            <select id="subjectEn" name="subject" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; background: #f8f9fa;">
-                                <option value="">Select Subject</option>
-                                <option value="donation">Donation Inquiry</option>
-                                <option value="impact">How donations are used</option>
-                                <option value="volunteer">Volunteer with us</option>
-                                <option value="partnership">Partnership or Sponsorship</option>
-                                <option value="media">Media Inquiry</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="messageEn">Your Message *</label>
-                            <textarea id="messageEn" name="message" placeholder="Write your question or inquiry here..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-button">📧 Send Message</button>
-                    </form>
-                    
-                    <div style="margin-top: 30px; text-align: center; color: #666;">
-                        <p><strong>📞 Other Contact Methods:</strong></p>
-                        <p>📧 Email: info@hope4gaza.org</p>
-                        <p>📱 WhatsApp: <a href="https://wa.me/1234567890" style="color: #25D366;">+1 234 567 890</a></p>
-                        <p>🕐 Response time: 24/7 (We respond within 24 hours)</p>
                     </div>
                 </div>
             </div>
@@ -315,6 +266,51 @@
                 </div>
             </div>
 
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">💬 Have a Question? Contact Us</h2>
+                
+                <div class="contact-form">
+                    <form id="contactFormEn" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="nameEn">Full Name *</label>
+                            <input type="text" id="nameEn" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="emailEn">Email Address *</label>
+                            <input type="email" id="emailEn" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subjectEn">Inquiry Subject *</label>
+                            <select id="subjectEn" name="subject" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; background: #f8f9fa;">
+                                <option value="">Select Subject</option>
+                                <option value="donation">Donation Inquiry</option>
+                                <option value="impact">How donations are used</option>
+                                <option value="volunteer">Volunteer with us</option>
+                                <option value="partnership">Partnership or Sponsorship</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="messageEn">Your Message *</label>
+                            <textarea id="messageEn" name="message" placeholder="Write your question or inquiry here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">📧 Send Message</button>
+                    </form>
+                    
+                    <div style="margin-top: 30px; text-align: center; color: #666;">
+                        <p><strong>📞 Other Contact Methods:</strong></p>
+                        <p>📧 Email: <a href="mailto:aa9896164@gmail.com" style="color: #4CAF50;">aa9896164@gmail.com</a></p>
+                        <p>🕐 Response time: 24/7 (We respond within 24 hours)</p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Footer -->
             <div class="footer">
                 <h3>Thank you for your care and assistance</h3>
@@ -327,7 +323,175 @@
     </div>
 
     <script>
-        // Language switching functionality
+        // PayPal Integration
+        let selectedAmount = 25;
+        let paypalButtonsRendered = false;
+
+        // Amount selection functions
+        function selectAmount(amount) {
+            selectedAmount = amount;
+            
+            // Update visual selection
+            document.querySelectorAll('.amount-btn').forEach(btn => {
+                btn.style.background = '#f8f9fa';
+                btn.style.borderColor = '#e0e0e0';
+                btn.style.color = '#333';
+            });
+            
+            const selectedBtn = document.querySelector(`[data-amount="${amount}"]`);
+            if (selectedBtn) {
+                selectedBtn.style.background = '#4CAF50';
+                selectedBtn.style.borderColor = '#4CAF50';
+                selectedBtn.style.color = 'white';
+            }
+            
+            // Clear custom input
+            const customInput = document.getElementById('customAmount');
+            const customInputEn = document.getElementById('customAmountEn');
+            if (customInput) customInput.value = '';
+            if (customInputEn) customInputEn.value = '';
+            
+            // Update display
+            updateAmountDisplay();
+            
+            // Re-render PayPal buttons
+            renderPayPalButtons();
+        }
+
+        function selectCustomAmount() {
+            const currentLang = document.querySelector('.lang-content.active').id;
+            const inputId = currentLang === 'content-ar' ? 'customAmount' : 'customAmountEn';
+            const customInput = document.getElementById(inputId);
+            
+            if (customInput && customInput.value) {
+                selectedAmount = parseInt(customInput.value);
+                
+                // Remove selection from preset buttons
+                document.querySelectorAll('.amount-btn').forEach(btn => {
+                    btn.style.background = '#f8f9fa';
+                    btn.style.borderColor = '#e0e0e0';
+                    btn.style.color = '#333';
+                });
+                
+                // Update display
+                updateAmountDisplay();
+                
+                // Re-render PayPal buttons
+                renderPayPalButtons();
+            }
+        }
+
+        function updateAmountDisplay() {
+            const displayAr = document.getElementById('amount-display-ar');
+            const displayEn = document.getElementById('amount-display-en');
+            const containerAr = document.getElementById('selected-amount-ar');
+            const containerEn = document.getElementById('selected-amount-en');
+            
+            if (displayAr) displayAr.textContent = selectedAmount;
+            if (displayEn) displayEn.textContent = selectedAmount;
+            if (containerAr) containerAr.style.display = 'block';
+            if (containerEn) containerEn.style.display = 'block';
+        }
+
+        function renderPayPalButtons() {
+            // Only render if PayPal SDK is loaded
+            if (typeof paypal === 'undefined') {
+                console.log('PayPal SDK not loaded yet');
+                return;
+            }
+
+            const currentLang = document.querySelector('.lang-content.active').id;
+            const containerId = currentLang === 'content-ar' ? 'paypal-button-container-ar' : 'paypal-button-container-en';
+            const container = document.getElementById(containerId);
+            
+            if (!container) return;
+            
+            // Clear existing buttons
+            container.innerHTML = '';
+            
+            // Render PayPal buttons
+            paypal.Buttons({
+                style: {
+                    layout: 'horizontal',
+                    color: 'blue',
+                    shape: 'rect',
+                    label: 'donate',
+                    height: 50
+                },
+                
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: selectedAmount.toString(),
+                                currency_code: 'USD'
+                            },
+                            description: 'Gaza Children Emergency Relief Donation'
+                        }]
+                    });
+                },
+                
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        // Track successful donation
+                        trackDonationClick('paypal_sdk_success');
+                        gtag('event', 'purchase', {
+                            'transaction_id': details.id,
+                            'value': selectedAmount,
+                            'currency': 'USD',
+                            'items': [{
+                                'item_id': 'gaza_donation',
+                                'item_name': 'Gaza Children Relief Donation',
+                                'category': 'Donation',
+                                'quantity': 1,
+                                'price': selectedAmount
+                            }]
+                        });
+                        
+                        // Show success message
+                        const message = currentLang === 'content-ar' ? 
+                            `شكراً لك! تم تسجيل تبرعك بمبلغ ${selectedAmount} بنجاح. نرقم المعاملة: ${details.id}` :
+                            `Thank you! Your donation of ${selectedAmount} has been processed successfully. Transaction ID: ${details.id}`;
+                        
+                        alert(message);
+                        
+                        // Optional: Redirect to thank you page
+                        // window.location.href = '/thank-you';
+                    });
+                },
+                
+                onError: function(err) {
+                    console.error('PayPal Error:', err);
+                    const message = currentLang === 'content-ar' ? 
+                        'حدث خطأ في عملية التبرع. يرجى المحاولة مرة أخرى أو استخدام الروابط البديلة أدناه.' :
+                        'An error occurred during donation. Please try again or use the alternative links below.';
+                    alert(message);
+                },
+                
+                onCancel: function(data) {
+                    const message = currentLang === 'content-ar' ? 
+                        'تم إلغاء عملية التبرع.' :
+                        'Donation was cancelled.';
+                    console.log('Donation cancelled:', data);
+                }
+                
+            }).render('#' + containerId);
+        }
+
+        // Initialize PayPal when SDK loads
+        function initializePayPal() {
+            if (typeof paypal !== 'undefined') {
+                // Select default amount
+                selectAmount(25);
+                renderPayPalButtons();
+                paypalButtonsRendered = true;
+            } else {
+                // Retry after a short delay
+                setTimeout(initializePayPal, 1000);
+            }
+        }
+
+        // Language switching functionality (updated to re-render PayPal buttons)
         function switchLanguage(lang) {
             trackLanguageChange(lang);
             
@@ -377,6 +541,11 @@
                 localStorage.setItem('preferred-language', lang);
             } catch(e) {
                 console.log('localStorage not available');
+            }
+            
+            // Re-render PayPal buttons for new language
+            if (paypalButtonsRendered) {
+                setTimeout(renderPayPalButtons, 500);
             }
         }
         
@@ -500,87 +669,13 @@
             });
         }
 
-        // PayPal Integration Functions
-        
-        // PayPal.me username
-        const PAYPAL_USERNAME = "asem165";
-        
-        // PayPal direct donation functions
-        function donatePayPal(amount) {
-            trackDonationClick(`paypal_${amount}_direct`);
-            
-            // إنشاء رابط PayPal.me مباشر
-            const paypalURL = `https://paypal.me/${PAYPAL_USERNAME}/${amount}USD`;
-            
-            // فتح PayPal في نافذة جديدة
-            window.open(paypalURL, '_blank');
-        }
-        
-        function donatePayPalCustom() {
-            const amount = document.getElementById('customAmount').value;
-            if (amount && amount > 0) {
-                trackDonationClick(`paypal_${amount}_custom`);
-                const paypalURL = `https://paypal.me/${PAYPAL_USERNAME}/${amount}USD`;
-                window.open(paypalURL, '_blank');
-            } else {
-                alert('يرجى إدخال مبلغ صالح / Please enter a valid amount');
-            }
-        }
-        
-        function donatePayPalCustomEn() {
-            const amount = document.getElementById('customAmountEn').value;
-            if (amount && amount > 0) {
-                trackDonationClick(`paypal_${amount}_custom_en`);
-                const paypalURL = `https://paypal.me/${PAYPAL_USERNAME}/${amount}USD`;
-                window.open(paypalURL, '_blank');
-            } else {
-                alert('Please enter a valid amount / يرجى إدخال مبلغ صالح');
-            }
-        }
-        
-        // PayPal Smart Payment Buttons (Advanced Integration)
-        function initializePayPalButtons() {
-            // التحقق من وجود PayPal SDK
-            if (typeof paypal !== 'undefined') {
-                // إنشاء أزرار PayPal الذكية (اختياري - للتكامل المتقدم)
-                try {
-                    paypal.Buttons({
-                        createOrder: function(data, actions) {
-                            return actions.order.create({
-                                purchase_units: [{
-                                    amount: {
-                                        value: '25.00' // المبلغ الافتراضي
-                                    },
-                                    description: 'Gaza Children Emergency Relief Donation'
-                                }]
-                            });
-                        },
-                        onApprove: function(data, actions) {
-                            return actions.order.capture().then(function(details) {
-                                alert('شكراً لك! تم التبرع بنجاح - Thank you! Donation completed successfully');
-                                trackDonationClick('paypal_smart_button');
-                            });
-                        },
-                        onError: function(err) {
-                            console.error('PayPal Error:', err);
-                            alert('حدث خطأ في المعاملة / Transaction error occurred');
-                        }
-                    }).render('#paypal-button-container');
-                } catch(e) {
-                    console.log('PayPal Smart Buttons not available, using direct links');
-                }
-            }
-        }
-        
-        // Alternative: Simple PayPal.me integration (أسهل طريقة)
-        function donatePayPalMe(amount) {
-            trackDonationClick(`paypalme_${amount}`);
-            const paypalMeURL = `https://paypal.me/${PAYPAL_USERNAME}/${amount}USD`;
-            window.open(paypalMeURL, '_blank');
-        }
+        // Start animations when page loads
         window.addEventListener('load', () => {
             loadLanguagePreference();
             setTimeout(animateCounters, 1000);
+            
+            // Initialize PayPal after page load
+            setTimeout(initializePayPal, 2000);
         });
     </script>
 </body>
@@ -609,7 +704,9 @@
     <meta name="twitter:description" content="ساعد أطفال غزة المحتاجين. حملة تبرعات إنسانية شفافة.">
     
     <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD&intent=capture"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD&intent=capture&components=buttons"></script>
+    
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Z7Z7VJMVB"></script>
     <script>
         const GA_MEASUREMENT_ID = 'G-1Z7Z7VJMVB';
@@ -1248,42 +1345,51 @@
                     <!-- PayPal Option -->
                     <div class="payment-card">
                         <h3 style="color: #2c3e50; margin-bottom: 20px;">💳 التبرع المباشر - PayPal</h3>
-                        <p style="color: #666; margin-bottom: 20px;">تبرع مباشرة وآمن عبر PayPal - لا يتطلب حساب PayPal مسبق</p>
+                        <p style="color: #666; margin-bottom: 20px;">تبرع مباشرة وآمن عبر PayPal بدون مغادرة الموقع</p>
                         
-                        <!-- Quick Amount Buttons -->
-                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0;">
-                            <button onclick="donatePayPal(25)" class="donation-button" style="width: 100%; font-size: 1rem; padding: 15px;">
-                                $25 💝
-                            </button>
-                            <button onclick="donatePayPal(50)" class="donation-button" style="width: 100%; font-size: 1rem; padding: 15px;">
-                                $50 💝
-                            </button>
-                            <button onclick="donatePayPal(100)" class="donation-button" style="width: 100%; font-size: 1rem; padding: 15px;">
-                                $100 💝
-                            </button>
-                            <button onclick="donatePayPal(200)" class="donation-button" style="width: 100%; font-size: 1rem; padding: 15px;">
-                                $200 💝
-                            </button>
-                        </div>
-                        
-                        <!-- Custom Amount -->
+                        <!-- PayPal Amount Selection -->
                         <div style="margin: 20px 0;">
-                            <label style="display: block; margin-bottom: 10px; font-weight: bold; color: #2c3e50;">💰 أو أدخل المبلغ المرغوب:</label>
-                            <div style="display: flex; gap: 10px; align-items: center;">
-                                <span style="font-size: 1.2rem; font-weight: bold;">$</span>
-                                <input type="number" id="customAmount" placeholder="25" min="1" max="10000" style="flex: 1; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px;">
-                                <button onclick="donatePayPalCustom()" class="donation-button" style="white-space: nowrap; padding: 15px 25px;">
-                                    تبرع الآن 💝
+                            <label style="display: block; margin-bottom: 10px; font-weight: bold; color: #2c3e50;">اختر مبلغ التبرع:</label>
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 15px;">
+                                <button class="amount-btn" onclick="selectAmount(25)" data-amount="25" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
+                                    $25
                                 </button>
+                                <button class="amount-btn" onclick="selectAmount(50)" data-amount="50" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
+                                    $50
+                                </button>
+                                <button class="amount-btn" onclick="selectAmount(100)" data-amount="100" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
+                                    $100
+                                </button>
+                                <button class="amount-btn" onclick="selectAmount(200)" data-amount="200" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
+                                    $200
+                                </button>
+                            </div>
+                            
+                            <!-- Custom Amount Input -->
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; margin-bottom: 8px; color: #2c3e50;">أو أدخل مبلغاً مخصصاً:</label>
+                                <input type="number" id="customAmount" placeholder="مثال: 75" min="1" max="10000" style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px;" oninput="selectCustomAmount()">
                             </div>
                         </div>
                         
-                        <!-- PayPal Smart Payment Buttons -->
-                        <div id="paypal-button-container" style="margin: 20px 0;"></div>
+                        <!-- PayPal Buttons Container -->
+                        <div id="paypal-button-container-ar" style="margin: 20px 0;"></div>
                         
-                        <p style="color: #666; font-size: 0.9rem; text-align: center;">
-                            ✅ آمن 100% | ✅ لا يتطلب حساب PayPal | ✅ يقبل جميع البطاقات
-                        </p>
+                        <!-- Selected Amount Display -->
+                        <div id="selected-amount-ar" style="text-align: center; margin: 15px 0; font-size: 18px; font-weight: bold; color: #4CAF50; display: none;">
+                            المبلغ المختار: $<span id="amount-display-ar">25</span>
+                        </div>
+                        
+                        <!-- Fallback Links -->
+                        <div style="margin-top: 20px; text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;">
+                            <p style="margin-bottom: 15px; font-weight: bold;">💡 طرق التبرع البديلة:</p>
+                            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                                <a href="https://paypal.me/hope4gaza/25" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$25</a>
+                                <a href="https://paypal.me/hope4gaza/50" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$50</a>
+                                <a href="https://paypal.me/hope4gaza/100" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$100</a>
+                                <a href="https://paypal.me/hope4gaza" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">مخصص</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
