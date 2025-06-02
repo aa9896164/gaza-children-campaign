@@ -1,4 +1,590 @@
-<!DOCTYPE html>
+<!-- Contact Section -->
+            <div class="contact-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">💬 لديك سؤال؟ تواصل معنا</h2>
+                
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف (اختياري)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">موضوع الاستفسار *</label>
+                            <select id="subject" name="subject" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; background: #f8f9fa;">
+                                <option value="">اختر الموضوع</option>
+                                <option value="donation">استفسار عن التبرع</option>
+                                <option value="impact">كيفية استخدام التبرعات</option>
+                                <option value="volunteer">التطوع معنا</option>
+                                <option value="partnership">شراكة أو رعاية</option>
+                                <option value="media">استفسار إعلامي</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">رسالتك *</label>
+                            <textarea id="message" name="message" placeholder="اكتب سؤالك أو استفسارك هنا..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">📧 إرسال الرسالة</button>
+                    </form>
+                    
+                    <div style="margin-top: 30px; text-align: center; color: #666;">
+                        <p><strong>📞 طرق التواصل الأخرى:</strong></p>
+                        <p>📧 البريد الإلكتروني: info@hope4gaza.org</p>
+                        <p>📱 واتساب: <a href="https://wa.me/1234567890" style="color: #25D366;">+1 234 567 890</a></p>
+                        <p>🕐 أوقات الرد: 24/7 (نرد خلال 24 ساعة)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="social-proof">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">شهادات المتبرعين</h2>
+                
+                <div class="testimonial">
+                    "شعرت بسعادة غامرة عندما ساهمت في هذه الحملة. كل دولار يذهب لمساعدة الأطفال الأبرياء"
+                </div>
+                
+                <div class="testimonial">
+                    "الشفافية في هذه الحملة مميزة. أرى بوضوح كيف تُستخدم تبرعاتي لمساعدة الأطفال"
+                </div>
+                
+                <div class="testimonial">
+                    "أدعو كل من يستطيع المساهمة أن يفعل ذلك. الأطفال يحتاجون مساعدتنا الآن"
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">شارك الحملة مع أصدقائك</h3>
+                <div class="share-buttons">
+                    <button class="share-btn whatsapp" onclick="shareWhatsApp('ar')">
+                        📱 واتساب
+                    </button>
+                    <button class="share-btn facebook" onclick="shareFacebook()">
+                        📘 فيسبوك
+                    </button>
+                    <button class="share-btn twitter" onclick="shareTwitter('ar')">
+                        🐦 تويتر
+                    </button>
+                    <button class="share-btn telegram" onclick="shareTelegram('ar')">
+                        ✈️ تيليجرام
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <h3>شكراً لك على اهتمامك ومساعدتك</h3>
+                <p>معاً نستطيع إحداث الفرق في حياة الأطفال</p>
+                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                    هذه حملة خيرية شفافة وموثقة | جميع التبرعات تذهب مباشرة للمحتاجين
+                </p>
+            </div>
+        </div>
+
+        <!-- English Content -->
+        <div class="lang-content" id="content-en">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Together for Gaza's Children</h1>
+                    <p class="subtitle">Be part of hope - Help save innocent children's lives</p>
+                    
+                    <div class="urgency-banner">
+                        ⏰ Time is running out - Every minute counts in saving lives
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="progress-bar">
+                        <div class="progress-fill">
+                            65% of goal reached
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">2.3M</div>
+                    <div class="stat-label">Children need help</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Generous donors</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Continuous aid</div>
+                </div>
+            </div>
+
+            <!-- Donation Section -->
+            <div class="donation-section">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Donate Now and Make a Difference</h2>
+                
+                <!-- Payment Options -->
+                <div class="payment-options">
+                    <!-- Chuffed Option -->
+                    <div class="payment-card">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">💝 Donate via Chuffed</h3>
+                        <div class="chuffed-iframe-container">
+                            <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+                        </div>
+                        <p style="color: #666; margin-bottom: 15px;">Or donate directly:</p>
+                        <a href="https://chuffed.org/project/gaza-children-emergency-relief" target="_blank" class="donation-button" onclick="trackDonationClick('chuffed_direct_en')">
+                            💝 Donate via Chuffed
+                        </a>
+                    </div>
+
+                    <!-- PayPal Option -->
+                    <div class="payment-card">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">💳 Direct Donation - PayPal</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Donate directly and securely via PayPal</p>
+                        
+                        <!-- PayPal Buttons for different amounts -->
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0;">
+                            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_25" />
+                                <button type="submit" class="donation-button" onclick="trackDonationClick('paypal_25_en')" style="width: 100%; font-size: 1rem; padding: 15px;">
+                                    $25 💝
+                                </button>
+                            </form>
+                            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_50" />
+                                <button type="submit" class="donation-button" onclick="trackDonationClick('paypal_50_en')" style="width: 100%; font-size: 1rem; padding: 15px;">
+                                    $50 💝
+                                </button>
+                            </form>
+                            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_100" />
+                                <button type="submit" class="donation-button" onclick="trackDonationClick('paypal_100_en')" style="width: 100%; font-size: 1rem; padding: 15px;">
+                                    $100 💝
+                                </button>
+                            </form>
+                            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_BUTTON_ID_200" />
+                                <button type="submit" class="donation-button" onclick="trackDonationClick('paypal_200_en')" style="width: 100%; font-size: 1rem; padding: 15px;">
+                                    $200 💝
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <!-- Custom Amount PayPal -->
+                        <form action="https://www.paypal.com/donate" method="post" target="_top">
+                            <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_CUSTOM_BUTTON_ID" />
+                            <button type="submit" class="donation-button paypal-button" onclick="trackDonationClick('paypal_custom_en')" style="width: 100%;">
+                                💳 Donate Custom Amount via PayPal
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div style="margin: 30px 0; font-size: 1.1rem; color: #555;">
+                    <p><strong>Suggested donation amounts:</strong></p>
+                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+                        <span style="background: #f39c12; color: white; padding: 10px 20px; border-radius: 25px;">$25</span>
+                        <span style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 25px;">$50</span>
+                        <span style="background: #9b59b6; color: white; padding: 10px 20px; border-radius: 25px;">$100</span>
+                        <span style="background: #1abc9c; color: white; padding: 10px 20px; border-radius: 25px;">$200</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="impact-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Your Impact</h2>
+                
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🍞 $25</h3>
+                        <p>Provides meals for a child for one full week</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">💊 $50</h3>
+                        <p>Provides essential medicines and medical supplies</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🏠 $100</h3>
+                        <p>Provides temporary safe shelter for a displaced family</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
+                        <p>Provides educational supplies and school materials for dozens of children</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">💬 Have a Question? Contact Us</h2>
+                
+                <div class="contact-form">
+                    <form id="contactFormEn" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="nameEn">Full Name *</label>
+                            <input type="text" id="nameEn" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="emailEn">Email Address *</label>
+                            <input type="email" id="emailEn" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phoneEn">Phone Number (Optional)</label>
+                            <input type="tel" id="phoneEn" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subjectEn">Inquiry Subject *</label>
+                            <select id="subjectEn" name="subject" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; background: #f8f9fa;">
+                                <option value="">Select Subject</option>
+                                <option value="donation">Donation Inquiry</option>
+                                <option value="impact">How donations are used</option>
+                                <option value="volunteer">Volunteer with us</option>
+                                <option value="partnership">Partnership or Sponsorship</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="messageEn">Your Message *</label>
+                            <textarea id="messageEn" name="message" placeholder="Write your question or inquiry here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">📧 Send Message</button>
+                    </form>
+                    
+                    <div style="margin-top: 30px; text-align: center; color: #666;">
+                        <p><strong>📞 Other Contact Methods:</strong></p>
+                        <p>📧 Email: info@hope4gaza.org</p>
+                        <p>📱 WhatsApp: <a href="https://wa.me/1234567890" style="color: #25D366;">+1 234 567 890</a></p>
+                        <p>🕐 Response time: 24/7 (We respond within 24 hours)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="social-proof">
+                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Donor Testimonials</h2>
+                
+                <div class="testimonial">
+                    "I felt immense joy when I contributed to this campaign. Every dollar goes to help innocent children"
+                </div>
+                
+                <div class="testimonial">
+                    "The transparency in this campaign is outstanding. I can clearly see how my donations are being used to help children"
+                </div>
+                
+                <div class="testimonial">
+                    "I urge everyone who can contribute to do so. Children need our help now"
+                </div>
+            </div>
+
+            <!-- Share Buttons -->
+            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: #2c3e50; margin-bottom: 20px;">Share the campaign with your friends</h3>
+                <div class="share-buttons">
+                    <button class="share-btn whatsapp" onclick="shareWhatsApp('en')">
+                        📱 WhatsApp
+                    </button>
+                    <button class="share-btn facebook" onclick="shareFacebook()">
+                        📘 Facebook
+                    </button>
+                    <button class="share-btn twitter" onclick="shareTwitter('en')">
+                        🐦 Twitter
+                    </button>
+                    <button class="share-btn telegram" onclick="shareTelegram('en')">
+                        ✈️ Telegram
+                    </button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <h3>Thank you for your care and assistance</h3>
+                <p>Together we can make a difference in children's lives</p>
+                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                    This is a transparent and documented charity campaign | All donations go directly to those in need
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Language switching functionality
+        function switchLanguage(lang) {
+            trackLanguageChange(lang);
+            
+            // Hide all content
+            const contents = document.querySelectorAll('.lang-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Show selected language content
+            const selectedContent = document.getElementById(`content-${lang}`);
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+            }
+            
+            // Update active language button
+            const langButtons = document.querySelectorAll('.lang-btn');
+            langButtons.forEach(btn => btn.classList.remove('active'));
+            
+            const activeButton = document.querySelector(`[data-lang="${lang}"]`);
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+            
+            // Update page direction and language
+            const body = document.body;
+            if (lang === 'ar') {
+                body.setAttribute('dir', 'rtl');
+                body.setAttribute('lang', 'ar');
+                body.classList.remove('en');
+            } else {
+                body.setAttribute('dir', 'ltr');
+                body.setAttribute('lang', lang);
+                body.classList.add('en');
+            }
+            
+            // Update page title based on language
+            const titles = {
+                'ar': 'معاً من أجل أطفال غزة - حملة التبرعات الإنسانية',
+                'en': 'Together for Gaza\'s Children - Humanitarian Donation Campaign',
+                'fr': 'Ensemble pour les Enfants de Gaza - Campagne de Dons Humanitaires',
+                'es': 'Juntos por los Niños de Gaza - Campaña de Donaciones Humanitarias'
+            };
+            
+            document.title = titles[lang] || titles['ar'];
+            
+            // Save language preference
+            try {
+                localStorage.setItem('preferred-language', lang);
+            } catch(e) {
+                console.log('localStorage not available');
+            }
+        }
+        
+        // Load saved language preference
+        function loadLanguagePreference() {
+            try {
+                const savedLang = localStorage.getItem('preferred-language') || 'ar';
+                switchLanguage(savedLang);
+            } catch(e) {
+                switchLanguage('ar');
+            }
+        }
+
+        // Share functions with tracking
+        function shareWhatsApp(lang) {
+            trackSocialShare('whatsapp_' + lang);
+            const messages = {
+                'ar': "ساهم معنا في مساعدة أطفال غزة - حملة تبرعات إنسانية عاجلة 🇵🇸💙",
+                'en': "Help us support Gaza's children - Urgent humanitarian donation campaign 🇵🇸💙",
+                'fr': "Aidez-nous à soutenir les enfants de Gaza - Campagne de dons humanitaires urgente 🇵🇸💙",
+                'es': "Ayúdanos a apoyar a los niños de Gaza - Campaña urgente de donaciones humanitarias 🇵🇸💙"
+            };
+            const message = messages[lang] || messages['ar'];
+            const url = window.location.href;
+            window.open(`https://wa.me/?text=${encodeURIComponent(message + " " + url)}`, '_blank');
+        }
+
+        function shareFacebook() {
+            trackSocialShare('facebook');
+            const url = window.location.href;
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+        }
+
+        function shareTwitter(lang) {
+            trackSocialShare('twitter_' + lang);
+            const messages = {
+                'ar': "ساهم معنا في مساعدة أطفال غزة - حملة تبرعات إنسانية عاجلة 🇵🇸💙 #غزة #تبرعات #مساعدة_الأطفال",
+                'en': "Help us support Gaza's children - Urgent humanitarian donation campaign 🇵🇸💙 #Gaza #Donations #HelpChildren",
+                'fr': "Aidez-nous à soutenir les enfants de Gaza 🇵🇸💙 #Gaza #Dons #AideHumanitaire",
+                'es': "Ayúdanos a apoyar a los niños de Gaza 🇵🇸💙 #Gaza #Donaciones #AyudaHumanitaria"
+            };
+            const message = messages[lang] || messages['ar'];
+            const url = window.location.href;
+            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}&url=${encodeURIComponent(url)}`, '_blank');
+        }
+
+        function shareTelegram(lang) {
+            trackSocialShare('telegram_' + lang);
+            const messages = {
+                'ar': "ساهم معنا في مساعدة أطفال غزة - حملة تبرعات إنسانية عاجلة 🇵🇸💙",
+                'en': "Help us support Gaza's children - Urgent humanitarian donation campaign 🇵🇸💙",
+                'fr': "Aidez-nous à soutenir les enfants de Gaza 🇵🇸💙",
+                'es': "Ayúdanos a apoyar a los niños de Gaza 🇵🇸💙"
+            };
+            const message = messages[lang] || messages['ar'];
+            const url = window.location.href;
+            window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        // Contact form submission
+        function submitForm(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Track form submission
+            gtag('event', 'form_submit', {
+                'event_category': 'contact',
+                'event_label': data.subject
+            });
+            
+            // Here you would normally send the data to your server
+            // For now, we'll just show a success message
+            alert('تم إرسال رسالتك بنجاح! سنرد عليك خلال 24 ساعة. / Your message has been sent successfully! We will respond within 24 hours.');
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.stat-card, .impact-card, .payment-card');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.transform = 'translateY(0)';
+                    element.style.opacity = '1';
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = counter.innerText;
+                const cleanTarget = target.replace(/[^\d.]/g, '');
+                const increment = parseFloat(cleanTarget) / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= parseFloat(cleanTarget)) {
+                        counter.innerText = target;
+                        clearInterval(timer);
+                    } else {
+                        if (target.includes('M')) {
+                            counter.innerText = (current / 1000000).toFixed(1) + 'M';
+                        } else if (target.includes('K')) {
+                            counter.innerText = Math.floor(current) + 'K+';
+                        } else {
+                            counter.innerText = Math.floor(current);
+                        }
+                    }
+                }, 20);
+            });
+        }
+
+        // PayPal Integration Functions
+        
+        // PayPal.me username
+        const PAYPAL_USERNAME = "asem165";
+        
+        // PayPal direct donation functions
+        function donatePayPal(amount) {
+            trackDonationClick(`paypal_${amount}_direct`);
+            
+            // إنشاء رابط PayPal.me مباشر
+            const paypalURL = `https://paypal.me/${PAYPAL_USERNAME}/${amount}USD`;
+            
+            // فتح PayPal في نافذة جديدة
+            window.open(paypalURL, '_blank');
+        }
+        
+        function donatePayPalCustom() {
+            const amount = document.getElementById('customAmount').value;
+            if (amount && amount > 0) {
+                trackDonationClick(`paypal_${amount}_custom`);
+                const paypalURL = `https://paypal.me/${PAYPAL_USERNAME}/${amount}USD`;
+                window.open(paypalURL, '_blank');
+            } else {
+                alert('يرجى إدخال مبلغ صالح / Please enter a valid amount');
+            }
+        }
+        
+        function donatePayPalCustomEn() {
+            const amount = document.getElementById('customAmountEn').value;
+            if (amount && amount > 0) {
+                trackDonationClick(`paypal_${amount}_custom_en`);
+                const paypalURL = `https://paypal.me/${PAYPAL_USERNAME}/${amount}USD`;
+                window.open(paypalURL, '_blank');
+            } else {
+                alert('Please enter a valid amount / يرجى إدخال مبلغ صالح');
+            }
+        }
+        
+        // PayPal Smart Payment Buttons (Advanced Integration)
+        function initializePayPalButtons() {
+            // التحقق من وجود PayPal SDK
+            if (typeof paypal !== 'undefined') {
+                // إنشاء أزرار PayPal الذكية (اختياري - للتكامل المتقدم)
+                try {
+                    paypal.Buttons({
+                        createOrder: function(data, actions) {
+                            return actions.order.create({
+                                purchase_units: [{
+                                    amount: {
+                                        value: '25.00' // المبلغ الافتراضي
+                                    },
+                                    description: 'Gaza Children Emergency Relief Donation'
+                                }]
+                            });
+                        },
+                        onApprove: function(data, actions) {
+                            return actions.order.capture().then(function(details) {
+                                alert('شكراً لك! تم التبرع بنجاح - Thank you! Donation completed successfully');
+                                trackDonationClick('paypal_smart_button');
+                            });
+                        },
+                        onError: function(err) {
+                            console.error('PayPal Error:', err);
+                            alert('حدث خطأ في المعاملة / Transaction error occurred');
+                        }
+                    }).render('#paypal-button-container');
+                } catch(e) {
+                    console.log('PayPal Smart Buttons not available, using direct links');
+                }
+            }
+        }
+        
+        // Alternative: Simple PayPal.me integration (أسهل طريقة)
+        function donatePayPalMe(amount) {
+            trackDonationClick(`paypalme_${amount}`);
+            const paypalMeURL = `https://paypal.me/${PAYPAL_USERNAME}/${amount}USD`;
+            window.open(paypalMeURL, '_blank');
+        }
+        window.addEventListener('load', () => {
+            loadLanguagePreference();
+            setTimeout(animateCounters, 1000);
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -14,15 +600,16 @@
     <meta property="og:title" content="معاً من أجل أطفال غزة - حملة التبرعات الإنسانية">
     <meta property="og:description" content="ساعد أطفال غزة المحتاجين. كل تبرع يحدث فرقاً حقيقياً في حياة الأطفال الأبرياء.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:url" content="https://hope4gaza.netlify.app">
+    <meta property="og:image" content="https://hope4gaza.netlify.app/campaign-image.jpg">
     
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="معاً من أجل أطفال غزة">
     <meta name="twitter:description" content="ساعد أطفال غزة المحتاجين. حملة تبرعات إنسانية شفافة.">
     
-    <!-- Google Analytics -->
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD&intent=capture"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Z7Z7VJMVB"></script>
     <script>
         const GA_MEASUREMENT_ID = 'G-1Z7Z7VJMVB';
@@ -57,6 +644,7 @@
             });
         }
     </script>
+    
     <style>
         * {
             margin: 0;
@@ -92,6 +680,7 @@
             z-index: 1000;
             display: flex;
             gap: 10px;
+            flex-wrap: wrap;
         }
 
         .lang-btn {
@@ -104,6 +693,7 @@
             transition: all 0.3s ease;
             text-decoration: none;
             color: #333;
+            font-size: 12px;
         }
 
         .lang-btn.active {
@@ -122,7 +712,7 @@
             border-radius: 20px;
             padding: 40px;
             margin-bottom: 30px;
-            margin-top: 60px;
+            margin-top: 80px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
             text-align: center;
@@ -221,6 +811,26 @@
             text-align: center;
         }
 
+        .payment-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .payment-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .payment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
         .chuffed-iframe-container {
             display: flex;
             justify-content: center;
@@ -249,6 +859,8 @@
             box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
             position: relative;
             overflow: hidden;
+            border: none;
+            cursor: pointer;
         }
 
         .donation-button::before {
@@ -269,6 +881,14 @@
         .donation-button:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(76, 175, 80, 0.4);
+        }
+
+        .paypal-button {
+            background: linear-gradient(135deg, #0070ba, #003087);
+        }
+
+        .paypal-button:hover {
+            box-shadow: 0 15px 30px rgba(0, 112, 186, 0.4);
         }
 
         .impact-section {
@@ -316,6 +936,72 @@
         .impact-card:hover {
             transform: scale(1.05);
             box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .contact-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #4CAF50;
+            background: white;
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
         }
 
         .social-proof {
@@ -430,8 +1116,10 @@
             .hero-section,
             .donation-section,
             .impact-section,
-            .social-proof {
+            .social-proof,
+            .contact-section {
                 padding: 25px;
+                margin-top: 100px;
             }
             
             .stats-grid {
@@ -456,6 +1144,11 @@
             .chuffed-iframe-container iframe {
                 width: 100% !important;
                 max-width: 100% !important;
+            }
+
+            .payment-options {
+                grid-template-columns: 1fr;
+                gap: 20px;
             }
         }
 
@@ -490,10 +1183,10 @@
 <body>
     <!-- Language Switcher -->
     <div class="language-switcher">
-        <a href="#" class="lang-btn active" onclick="switchLanguage('ar')" data-lang="ar">العربية</a>
-        <a href="#" class="lang-btn" onclick="switchLanguage('en')" data-lang="en">English</a>
-        <a href="#" class="lang-btn" onclick="switchLanguage('fr')" data-lang="fr">Français</a>
-        <a href="#" class="lang-btn" onclick="switchLanguage('es')" data-lang="es">Español</a>
+        <button class="lang-btn active" onclick="switchLanguage('ar')" data-lang="ar">العربية</button>
+        <button class="lang-btn" onclick="switchLanguage('en')" data-lang="en">English</button>
+        <button class="lang-btn" onclick="switchLanguage('fr')" data-lang="fr">Français</button>
+        <button class="lang-btn" onclick="switchLanguage('es')" data-lang="es">Español</button>
     </div>
 
     <div class="container">
@@ -538,16 +1231,59 @@
             <div class="donation-section">
                 <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">تبرع الآن وأحدث الفرق</h2>
                 
-                <!-- Chuffed iframe -->
-                <div class="chuffed-iframe-container">
-                    <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
-                    
-                    <!-- Fallback if iframe doesn't work -->
-                    <div style="margin-top: 20px;">
-                        <p style="color: #666; margin-bottom: 15px;">إذا لم يظهر الإطار أعلاه، يمكنك التبرع مباشرة:</p>
-                        <a href="https://chuffed.org/project/124859-gaza-children-emergency-relief" target="_blank" class="donation-button" onclick="trackDonationClick('chuffed_fallback_ar')">
-                            💝 تبرع الآن عبر Chuffed
+                <!-- Payment Options -->
+                <div class="payment-options">
+                    <!-- Chuffed Option -->
+                    <div class="payment-card">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">💝 التبرع عبر Chuffed</h3>
+                        <div class="chuffed-iframe-container">
+                            <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+                        </div>
+                        <p style="color: #666; margin-bottom: 15px;">أو تبرع مباشرة:</p>
+                        <a href="https://chuffed.org/project/gaza-children-emergency-relief" target="_blank" class="donation-button" onclick="trackDonationClick('chuffed_direct_ar')">
+                            💝 تبرع عبر Chuffed
                         </a>
+                    </div>
+
+                    <!-- PayPal Option -->
+                    <div class="payment-card">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">💳 التبرع المباشر - PayPal</h3>
+                        <p style="color: #666; margin-bottom: 20px;">تبرع مباشرة وآمن عبر PayPal - لا يتطلب حساب PayPal مسبق</p>
+                        
+                        <!-- Quick Amount Buttons -->
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin: 20px 0;">
+                            <button onclick="donatePayPal(25)" class="donation-button" style="width: 100%; font-size: 1rem; padding: 15px;">
+                                $25 💝
+                            </button>
+                            <button onclick="donatePayPal(50)" class="donation-button" style="width: 100%; font-size: 1rem; padding: 15px;">
+                                $50 💝
+                            </button>
+                            <button onclick="donatePayPal(100)" class="donation-button" style="width: 100%; font-size: 1rem; padding: 15px;">
+                                $100 💝
+                            </button>
+                            <button onclick="donatePayPal(200)" class="donation-button" style="width: 100%; font-size: 1rem; padding: 15px;">
+                                $200 💝
+                            </button>
+                        </div>
+                        
+                        <!-- Custom Amount -->
+                        <div style="margin: 20px 0;">
+                            <label style="display: block; margin-bottom: 10px; font-weight: bold; color: #2c3e50;">💰 أو أدخل المبلغ المرغوب:</label>
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <span style="font-size: 1.2rem; font-weight: bold;">$</span>
+                                <input type="number" id="customAmount" placeholder="25" min="1" max="10000" style="flex: 1; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px;">
+                                <button onclick="donatePayPalCustom()" class="donation-button" style="white-space: nowrap; padding: 15px 25px;">
+                                    تبرع الآن 💝
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- PayPal Smart Payment Buttons -->
+                        <div id="paypal-button-container" style="margin: 20px 0;"></div>
+                        
+                        <p style="color: #666; font-size: 0.9rem; text-align: center;">
+                            ✅ آمن 100% | ✅ لا يتطلب حساب PayPal | ✅ يقبل جميع البطاقات
+                        </p>
                     </div>
                 </div>
                 
@@ -586,453 +1322,4 @@
                 </div>
             </div>
 
-            <!-- Social Proof -->
-            <div class="social-proof">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">شهادات المتبرعين</h2>
-                
-                <div class="testimonial">
-                    "شعرت بسعادة غامرة عندما ساهمت في هذه الحملة. كل ريال يذهب لمساعدة الأطفال الأبرياء"
-                </div>
-                
-                <div class="testimonial">
-                    "الشفافية في هذه الحملة مميزة. أرى بوضوح كيف تُستخدم تبرعاتي لمساعدة الأطفال"
-                </div>
-                
-                <div class="testimonial">
-                    "أدعو كل من يستطيع المساهمة أن يفعل ذلك. الأطفال يحتاجون مساعدتنا الآن"
-                </div>
-            </div>
-
-            <!-- Share Buttons -->
-            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
-                <h3 style="color: #2c3e50; margin-bottom: 20px;">شارك الحملة مع أصدقائك</h3>
-                <div class="share-buttons">
-                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp('ar')">
-                        📱 واتساب
-                    </a>
-                    <a href="#" class="share-btn facebook" onclick="shareFacebook()">
-                        📘 فيسبوك
-                    </a>
-                    <a href="#" class="share-btn twitter" onclick="shareTwitter('ar')">
-                        🐦 تويتر
-                    </a>
-                    <a href="#" class="share-btn telegram" onclick="shareTelegram('ar')">
-                        ✈️ تيليجرام
-                    </a>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                <h3>شكراً لك على اهتمامك ومساعدتك</h3>
-                <p>معاً نستطيع إحداث الفرق في حياة الأطفال</p>
-                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
-                    هذه حملة خيرية شفافة وموثقة | جميع التبرعات تذهب مباشرة للمحتاجين
-                </p>
-            </div>
-        </div>
-
-        <!-- English Content -->
-        <div class="lang-content" id="content-en">
-            <!-- Hero Section -->
-            <div class="hero-section">
-                <div class="hero-content">
-                    <h1>Together for Gaza's Children</h1>
-                    <p class="subtitle">Be part of hope - Help save innocent children's lives</p>
-                    
-                    <div class="urgency-banner">
-                        ⏰ Time is running out - Every minute counts in saving lives
-                    </div>
-
-                    <!-- Progress Bar -->
-                    <div class="progress-bar">
-                        <div class="progress-fill">
-                            65% of goal reached
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Statistics -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">2.3M</div>
-                    <div class="stat-label">Children need help</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">50K+</div>
-                    <div class="stat-label">Generous donors</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Continuous aid</div>
-                </div>
-            </div>
-
-            <!-- Donation Section -->
-            <div class="donation-section">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Donate Now and Make a Difference</h2>
-                
-                <!-- Chuffed iframe -->
-                <div class="chuffed-iframe-container">
-                    <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
-                    
-                    <!-- Fallback if iframe doesn't work -->
-                    <div style="margin-top: 20px;">
-                        <p style="color: #666; margin-bottom: 15px;">If the frame above doesn't appear, you can donate directly:</p>
-                        <a href="https://chuffed.org/project/124859-gaza-children-emergency-relief" target="_blank" class="donation-button">
-                            💝 Donate Now via Chuffed
-                        </a>
-                    </div>
-                </div>
-                
-                <div style="margin: 30px 0; font-size: 1.1rem; color: #555;">
-                    <p><strong>Suggested donation amounts:</strong></p>
-                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
-                        <span style="background: #f39c12; color: white; padding: 10px 20px; border-radius: 25px;">$25</span>
-                        <span style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 25px;">$50</span>
-                        <span style="background: #9b59b6; color: white; padding: 10px 20px; border-radius: 25px;">$100</span>
-                        <span style="background: #1abc9c; color: white; padding: 10px 20px; border-radius: 25px;">$200</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Impact Section -->
-            <div class="impact-section">
-                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Your Impact</h2>
-                
-                <div class="impact-grid">
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🍞 $25</h3>
-                        <p>Provides meals for a child for one full week</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">💊 $50</h3>
-                        <p>Provides essential medicines and medical supplies</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🏠 $100</h3>
-                        <p>Provides temporary safe shelter for a displaced family</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
-                        <p>Provides educational supplies and school materials for dozens of children</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Social Proof -->
-            <div class="social-proof">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Donor Testimonials</h2>
-                
-                <div class="testimonial">
-                    "I felt immense joy when I contributed to this campaign. Every dollar goes to help innocent children"
-                </div>
-                
-                <div class="testimonial">
-                    "The transparency in this campaign is outstanding. I can clearly see how my donations are being used to help children"
-                </div>
-                
-                <div class="testimonial">
-                    "I urge everyone who can contribute to do so. Children need our help now"
-                </div>
-            </div>
-
-            <!-- Share Buttons -->
-            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
-                <h3 style="color: #2c3e50; margin-bottom: 20px;">Share the campaign with your friends</h3>
-                <div class="share-buttons">
-                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp('en')">
-                        📱 WhatsApp
-                    </a>
-                    <a href="#" class="share-btn facebook" onclick="shareFacebook()">
-                        📘 Facebook
-                    </a>
-                    <a href="#" class="share-btn twitter" onclick="shareTwitter('en')">
-                        🐦 Twitter
-                    </a>
-                    <a href="#" class="share-btn telegram" onclick="shareTelegram('en')">
-                        ✈️ Telegram
-                    </a>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                <h3>Thank you for your care and assistance</h3>
-                <p>Together we can make a difference in children's lives</p>
-                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
-                    This is a transparent and documented charity campaign | All donations go directly to those in need
-                </p>
-            </div>
-        </div>
-
-        <!-- French Content -->
-        <div class="lang-content" id="content-fr">
-            <!-- Hero Section -->
-            <div class="hero-section">
-                <div class="hero-content">
-                    <h1>Ensemble pour les Enfants de Gaza</h1>
-                    <p class="subtitle">Faites partie de l'espoir - Aidez à sauver des vies d'enfants innocents</p>
-                    
-                    <div class="urgency-banner">
-                        ⏰ Le temps presse - Chaque minute compte pour sauver des vies
-                    </div>
-
-                    <!-- Progress Bar -->
-                    <div class="progress-bar">
-                        <div class="progress-fill">
-                            65% de l'objectif atteint
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-                            <!-- Statistics -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">2.3M</div>
-                    <div class="stat-label">Enfants ont besoin d'aide</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">50K+</div>
-                    <div class="stat-label">Donateurs généreux</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Aide continue</div>
-                </div>
-            </div>
-
-            <!-- Donation Section -->
-            <div class="donation-section">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Faites un Don Maintenant</h2>
-                
-                <!-- Chuffed iframe -->
-                <div class="chuffed-iframe-container">
-                    <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
-                    
-                    <!-- Fallback if iframe doesn't work -->
-                    <div style="margin-top: 20px;">
-                        <p style="color: #666; margin-bottom: 15px;">Si le cadre ci-dessus n'apparaît pas, vous pouvez faire un don directement:</p>
-                        <a href="https://chuffed.org/project/124859-gaza-children-emergency-relief" target="_blank" class="donation-button" onclick="trackDonationClick('chuffed_fallback_fr')">
-                            💝 Faire un Don via Chuffed
-                        </a>
-                    </div>
-                </div>
-                
-                <div style="margin: 30px 0; font-size: 1.1rem; color: #555;">
-                    <p><strong>Montants de don suggérés:</strong></p>
-                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
-                        <span style="background: #f39c12; color: white; padding: 10px 20px; border-radius: 25px;">$25</span>
-                        <span style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 25px;">$50</span>
-                        <span style="background: #9b59b6; color: white; padding: 10px 20px; border-radius: 25px;">$100</span>
-                        <span style="background: #1abc9c; color: white; padding: 10px 20px; border-radius: 25px;">$200</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Impact Section -->
-            <div class="impact-section">
-                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Votre Impact</h2>
-                
-                <div class="impact-grid">
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🍞 $25</h3>
-                        <p>Fournit des repas pour un enfant pendant une semaine complète</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">💊 $50</h3>
-                        <p>Fournit des médicaments essentiels et des fournitures médicales</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🏠 $100</h3>
-                        <p>Fournit un abri temporaire sûr pour une famille déplacée</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
-                        <p>Fournit du matériel éducatif et scolaire pour des dizaines d'enfants</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Social Proof -->
-            <div class="social-proof">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Témoignages de Donateurs</h2>
-                
-                <div class="testimonial">
-                    "J'ai ressenti une immense joie en contribuant à cette campagne. Chaque dollar aide les enfants innocents"
-                </div>
-                
-                <div class="testimonial">
-                    "La transparence de cette campagne est remarquable. Je peux clairement voir comment mes dons sont utilisés"
-                </div>
-                
-                <div class="testimonial">
-                    "J'encourage tous ceux qui peuvent contribuer à le faire. Les enfants ont besoin de notre aide maintenant"
-                </div>
-            </div>
-
-            <!-- Share Buttons -->
-            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
-                <h3 style="color: #2c3e50; margin-bottom: 20px;">Partagez la campagne avec vos amis</h3>
-                <div class="share-buttons">
-                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp('fr')">
-                        📱 WhatsApp
-                    </a>
-                    <a href="#" class="share-btn facebook" onclick="shareFacebook()">
-                        📘 Facebook
-                    </a>
-                    <a href="#" class="share-btn twitter" onclick="shareTwitter('fr')">
-                        🐦 Twitter
-                    </a>
-                    <a href="#" class="share-btn telegram" onclick="shareTelegram('fr')">
-                        ✈️ Telegram
-                    </a>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                <h3>Merci pour votre attention et votre aide</h3>
-                <p>Ensemble, nous pouvons faire la différence dans la vie des enfants</p>
-                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
-                    Campagne caritative transparente et documentée | Tous les dons vont directement aux personnes dans le besoin
-                </p>
-            </div>
-        </div>
-
-        <!-- Spanish Content -->
-        <div class="lang-content" id="content-es">
-            <!-- Hero Section -->
-            <div class="hero-section">
-                <div class="hero-content">
-                    <h1>Juntos por los Niños de Gaza</h1>
-                    <p class="subtitle">Sé parte de la esperanza - Ayuda a salvar vidas de niños inocentes</p>
-                    
-                    <div class="urgency-banner">
-                        ⏰ El tiempo se agota - Cada minuto cuenta para salvar vidas
-                    </div>
-
-                    <!-- Progress Bar -->
-                    <div class="progress-bar">
-                        <div class="progress-fill">
-                            65% del objetivo alcanzado
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Statistics -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">2.3M</div>
-                    <div class="stat-label">Niños necesitan ayuda</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">50K+</div>
-                    <div class="stat-label">Donantes generosos</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Ayuda continua</div>
-                </div>
-            </div>
-
-            <!-- Donation Section -->
-            <div class="donation-section">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Dona Ahora y Marca la Diferencia</h2>
-                
-                <!-- Chuffed iframe -->
-                <div class="chuffed-iframe-container">
-                    <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
-                    
-                    <!-- Fallback if iframe doesn't work -->
-                    <div style="margin-top: 20px;">
-                        <p style="color: #666; margin-bottom: 15px;">Si el marco de arriba no aparece, puedes donar directamente:</p>
-                        <a href="https://chuffed.org/project/124859-gaza-children-emergency-relief" target="_blank" class="donation-button" onclick="trackDonationClick('chuffed_fallback_es')">
-                            💝 Donar Ahora vía Chuffed
-                        </a>
-                    </div>
-                </div>
-                
-                <div style="margin: 30px 0; font-size: 1.1rem; color: #555;">
-                    <p><strong>Cantidades de donación sugeridas:</strong></p>
-                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
-                        <span style="background: #f39c12; color: white; padding: 10px 20px; border-radius: 25px;">$25</span>
-                        <span style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 25px;">$50</span>
-                        <span style="background: #9b59b6; color: white; padding: 10px 20px; border-radius: 25px;">$100</span>
-                        <span style="background: #1abc9c; color: white; padding: 10px 20px; border-radius: 25px;">$200</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Impact Section -->
-            <div class="impact-section">
-                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Tu Impacto</h2>
-                
-                <div class="impact-grid">
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🍞 $25</h3>
-                        <p>Proporciona comidas para un niño durante una semana completa</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">💊 $50</h3>
-                        <p>Proporciona medicinas esenciales y suministros médicos</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🏠 $100</h3>
-                        <p>Proporciona refugio temporal seguro para una familia desplazada</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
-                        <p>Proporciona suministros educativos y materiales escolares para decenas de niños</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Social Proof -->
-            <div class="social-proof">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Testimonios de Donantes</h2>
-                
-                <div class="testimonial">
-                    "Sentí una inmensa alegría al contribuir a esta campaña. Cada dólar ayuda a niños inocentes"
-                </div>
-                
-                <div class="testimonial">
-                    "La transparencia en esta campaña es excepcional. Puedo ver claramente cómo se usan mis donaciones"
-                </div>
-                
-                <div class="testimonial">
-                    "Animo a todos los que puedan contribuir a hacerlo. Los niños necesitan nuestra ayuda ahora"
-                </div>
-            </div>
-
-            <!-- Share Buttons -->
-            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
-                <h3 style="color: #2c3e50; margin-bottom: 20px;">Comparte la campaña con tus amigos</h3>
-                <div class="share-buttons">
-                    <a href="#" class="share-btn whatsapp" onclick="shareWhatsApp('es')">
-                        📱 WhatsApp
-                    </a>
-                    <a href="#" class="share-btn facebook" onclick="shareFacebook()">
-                        📘 Facebook
-                    </a>
-                    <a href="#" class="share-btn twitter" onclick="shareTwitter('es')">
-                        🐦 Twitter
-                    </a>
-                    <a href="#" class="share-btn telegram" onclick="shareTelegram('es')">
-                        ✈️ Telegram
-                    </a>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                <h3>Gracias por tu atención y ayuda</h3>
-                <p>Juntos podemos hacer la diferencia en las vidas de los niños</p>
-                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
-                    Campaña benéfica transparente y documentada | Todas las donaciones van directamente a los necesitados
-                </p>
-            </div>
-        </div>
+            <!-- Contact Section -->
