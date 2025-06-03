@@ -1,862 +1,244 @@
-<!-- Social Proof -->
-            <div class="social-proof">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">شهادات المتبرعين</h2>
-                
-                <div class="testimonial">
-                    "شعرت بسعادة غامرة عندما ساهمت في هذه الحملة. كل دولار يذهب لمساعدة الأطفال الأبرياء"
-                </div>
-                
-                <div class="testimonial">
-                    "الشفافية في هذه الحملة مميزة. أرى بوضوح كيف تُستخدم تبرعاتي لمساعدة الأطفال"
-                </div>
-                
-                <div class="testimonial">
-                    "أدعو كل من يستطيع المساهمة أن يفعل ذلك. الأطفال يحتاجون مساعدتنا الآن"
-                </div>
-            </div>
-
-            <!-- Share Buttons -->
-            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
-                <h3 style="color: #2c3e50; margin-bottom: 20px;">شارك الحملة مع أصدقائك</h3>
-                <div class="share-buttons">
-                    <button class="share-btn whatsapp" onclick="shareWhatsApp('ar')">
-                        📱 واتساب
-                    </button>
-                    <button class="share-btn facebook" onclick="shareFacebook()">
-                        📘 فيسبوك
-                    </button>
-                    <button class="share-btn twitter" onclick="shareTwitter('ar')">
-                        🐦 تويتر
-                    </button>
-                    <button class="share-btn telegram" onclick="shareTelegram('ar')">
-                        ✈️ تيليجرام
-                    </button>
-                </div>
-            </div>
-
-            <!-- Contact Section -->
-            <div class="contact-section">
-                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">💬 لديك سؤال؟ تواصل معنا</h2>
-                
-                <div class="contact-form">
-                    <form id="contactForm" onsubmit="submitForm(event)">
-                        <div class="form-group">
-                            <label for="name">الاسم الكامل *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">البريد الإلكتروني *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">موضوع الاستفسار *</label>
-                            <select id="subject" name="subject" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; background: #f8f9fa;">
-                                <option value="">اختر الموضوع</option>
-                                <option value="donation">استفسار عن التبرع</option>
-                                <option value="impact">كيفية استخدام التبرعات</option>
-                                <option value="volunteer">التطوع معنا</option>
-                                <option value="partnership">شراكة أو رعاية</option>
-                                <option value="media">استفسار إعلامي</option>
-                                <option value="other">أخرى</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">رسالتك *</label>
-                            <textarea id="message" name="message" placeholder="اكتب سؤالك أو استفسارك هنا..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-button">📧 إرسال الرسالة</button>
-                    </form>
-                    
-                    <div style="margin-top: 30px; text-align: center; color: #666;">
-                        <p><strong>📞 طرق التواصل الأخرى:</strong></p>
-                        <p>📧 البريد الإلكتروني: <a href="mailto:aa9896164@gmail.com" style="color: #4CAF50;">aa9896164@gmail.com</a></p>
-                        <p>🕐 أوقات الرد: 24/7 (نرد خلال 24 ساعة)</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                <h3>شكراً لك على اهتمامك ومساعدتك</h3>
-                <p>معاً نستطيع إحداث الفرق في حياة الأطفال</p>
-                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
-                    هذه حملة خيرية شفافة وموثقة | جميع التبرعات تذهب مباشرة للمحتاجين
-                </p>
-            </div>
-        </div>
-
-        <!-- English Content -->
-        <div class="lang-content" id="content-en">
-            <!-- Hero Section -->
-            <div class="hero-section">
-                <div class="hero-content">
-                    <h1>Together for Gaza's Children</h1>
-                    <p class="subtitle">Be part of hope - Help save innocent children's lives</p>
-                    
-                    <div class="urgency-banner">
-                        ⏰ Time is running out - Every minute counts in saving lives
-                    </div>
-
-                    <!-- Progress Bar -->
-                    <div class="progress-bar">
-                        <div class="progress-fill">
-                            65% of goal reached
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Statistics -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">2.3M</div>
-                    <div class="stat-label">Children need help</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">50K+</div>
-                    <div class="stat-label">Generous donors</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Continuous aid</div>
-                </div>
-            </div>
-
-            <!-- Donation Section -->
-            <div class="donation-section">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Donate Now and Make a Difference</h2>
-                
-                <!-- Payment Options -->
-                <div class="payment-options">
-                    <!-- Chuffed Option -->
-                    <div class="payment-card">
-                        <h3 style="color: #2c3e50; margin-bottom: 20px;">💝 Donate via Chuffed</h3>
-                        <div class="chuffed-iframe-container">
-                            <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
-                        </div>
-                        <p style="color: #666; margin-bottom: 15px;">Or donate directly:</p>
-                        <a href="https://chuffed.org/project/gaza-children-emergency-relief" target="_blank" class="donation-button" onclick="trackDonationClick('chuffed_direct_en')">
-                            💝 Donate via Chuffed
-                        </a>
-                    </div>
-
-                    <!-- PayPal Option -->
-                    <div class="payment-card">
-                        <h3 style="color: #2c3e50; margin-bottom: 20px;">💳 Direct Donation - PayPal</h3>
-                        <p style="color: #666; margin-bottom: 20px;">Donate directly and securely via PayPal without leaving the site</p>
-                        
-                        <!-- PayPal Amount Selection -->
-                        <div style="margin: 20px 0;">
-                            <label style="display: block; margin-bottom: 10px; font-weight: bold; color: #2c3e50;">Select donation amount:</label>
-                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 15px;">
-                                <button class="amount-btn" onclick="selectAmount(25)" data-amount="25" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
-                                    $25
-                                </button>
-                                <button class="amount-btn" onclick="selectAmount(50)" data-amount="50" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
-                                    $50
-                                </button>
-                                <button class="amount-btn" onclick="selectAmount(100)" data-amount="100" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
-                                    $100
-                                </button>
-                                <button class="amount-btn" onclick="selectAmount(200)" data-amount="200" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
-                                    $200
-                                </button>
-                            </div>
-                            
-                            <!-- Custom Amount Input -->
-                            <div style="margin-bottom: 20px;">
-                                <label style="display: block; margin-bottom: 8px; color: #2c3e50;">Or enter a custom amount:</label>
-                                <input type="number" id="customAmountEn" placeholder="e.g., 75" min="1" max="10000" style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px;" oninput="selectCustomAmount()">
-                            </div>
-                        </div>
-                        
-                        <!-- PayPal Buttons Container -->
-                        <div id="paypal-button-container-en" style="margin: 20px 0;"></div>
-                        
-                        <!-- Selected Amount Display -->
-                        <div id="selected-amount-en" style="text-align: center; margin: 15px 0; font-size: 18px; font-weight: bold; color: #4CAF50; display: none;">
-                            Selected amount: $<span id="amount-display-en">25</span>
-                        </div>
-                        
-                        <!-- Fallback Links -->
-                        <div style="margin-top: 20px; text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;">
-                            <p style="margin-bottom: 15px; font-weight: bold;">💡 Alternative donation methods:</p>
-                            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                                <a href="https://paypal.me/hope4gaza/25" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$25</a>
-                                <a href="https://paypal.me/hope4gaza/50" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$50</a>
-                                <a href="https://paypal.me/hope4gaza/100" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$100</a>
-                                <a href="https://paypal.me/hope4gaza" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">Custom</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div style="margin: 30px 0; font-size: 1.1rem; color: #555;">
-                    <p><strong>Suggested donation amounts:</strong></p>
-                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
-                        <span style="background: #f39c12; color: white; padding: 10px 20px; border-radius: 25px;">$25</span>
-                        <span style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 25px;">$50</span>
-                        <span style="background: #9b59b6; color: white; padding: 10px 20px; border-radius: 25px;">$100</span>
-                        <span style="background: #1abc9c; color: white; padding: 10px 20px; border-radius: 25px;">$200</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Impact Section -->
-            <div class="impact-section">
-                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Your Impact</h2>
-                
-                <div class="impact-grid">
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🍞 $25</h3>
-                        <p>Provides meals for a child for one full week</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">💊 $50</h3>
-                        <p>Provides essential medicines and medical supplies</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🏠 $100</h3>
-                        <p>Provides temporary safe shelter for a displaced family</p>
-                    </div>
-                    <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
-                        <p>Provides educational supplies and school materials for dozens of children</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Social Proof -->
-            <div class="social-proof">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">Donor Testimonials</h2>
-                
-                <div class="testimonial">
-                    "I felt immense joy when I contributed to this campaign. Every dollar goes to help innocent children"
-                </div>
-                
-                <div class="testimonial">
-                    "The transparency in this campaign is outstanding. I can clearly see how my donations are being used to help children"
-                </div>
-                
-                <div class="testimonial">
-                    "I urge everyone who can contribute to do so. Children need our help now"
-                </div>
-            </div>
-
-            <!-- Share Buttons -->
-            <div style="text-align: center; background: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
-                <h3 style="color: #2c3e50; margin-bottom: 20px;">Share the campaign with your friends</h3>
-                <div class="share-buttons">
-                    <button class="share-btn whatsapp" onclick="shareWhatsApp('en')">
-                        📱 WhatsApp
-                    </button>
-                    <button class="share-btn facebook" onclick="shareFacebook()">
-                        📘 Facebook
-                    </button>
-                    <button class="share-btn twitter" onclick="shareTwitter('en')">
-                        🐦 Twitter
-                    </button>
-                    <button class="share-btn telegram" onclick="shareTelegram('en')">
-                        ✈️ Telegram
-                    </button>
-                </div>
-            </div>
-
-            <!-- Contact Section -->
-            <div class="contact-section">
-                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">💬 Have a Question? Contact Us</h2>
-                
-                <div class="contact-form">
-                    <form id="contactFormEn" onsubmit="submitForm(event)">
-                        <div class="form-group">
-                            <label for="nameEn">Full Name *</label>
-                            <input type="text" id="nameEn" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="emailEn">Email Address *</label>
-                            <input type="email" id="emailEn" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subjectEn">Inquiry Subject *</label>
-                            <select id="subjectEn" name="subject" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; background: #f8f9fa;">
-                                <option value="">Select Subject</option>
-                                <option value="donation">Donation Inquiry</option>
-                                <option value="impact">How donations are used</option>
-                                <option value="volunteer">Volunteer with us</option>
-                                <option value="partnership">Partnership or Sponsorship</option>
-                                <option value="media">Media Inquiry</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="messageEn">Your Message *</label>
-                            <textarea id="messageEn" name="message" placeholder="Write your question or inquiry here..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-button">📧 Send Message</button>
-                    </form>
-                    
-                    <div style="margin-top: 30px; text-align: center; color: #666;">
-                        <p><strong>📞 Other Contact Methods:</strong></p>
-                        <p>📧 Email: <a href="mailto:aa9896164@gmail.com" style="color: #4CAF50;">aa9896164@gmail.com</a></p>
-                        <p>🕐 Response time: 24/7 (We respond within 24 hours)</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="footer">
-                <h3>Thank you for your care and assistance</h3>
-                <p>Together we can make a difference in children's lives</p>
-                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
-                    This is a transparent and documented charity campaign | All donations go directly to those in need
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // PayPal Integration
-        let selectedAmount = 25;
-        let paypalButtonsRendered = false;
-
-        // Amount selection functions
-        function selectAmount(amount) {
-            selectedAmount = amount;
-            
-            // Update visual selection
-            document.querySelectorAll('.amount-btn').forEach(btn => {
-                btn.style.background = '#f8f9fa';
-                btn.style.borderColor = '#e0e0e0';
-                btn.style.color = '#333';
-            });
-            
-            const selectedBtn = document.querySelector(`[data-amount="${amount}"]`);
-            if (selectedBtn) {
-                selectedBtn.style.background = '#4CAF50';
-                selectedBtn.style.borderColor = '#4CAF50';
-                selectedBtn.style.color = 'white';
-            }
-            
-            // Clear custom input
-            const customInput = document.getElementById('customAmount');
-            const customInputEn = document.getElementById('customAmountEn');
-            if (customInput) customInput.value = '';
-            if (customInputEn) customInputEn.value = '';
-            
-            // Update display
-            updateAmountDisplay();
-            
-            // Re-render PayPal buttons
-            renderPayPalButtons();
-        }
-
-        function selectCustomAmount() {
-            const currentLang = document.querySelector('.lang-content.active').id;
-            const inputId = currentLang === 'content-ar' ? 'customAmount' : 'customAmountEn';
-            const customInput = document.getElementById(inputId);
-            
-            if (customInput && customInput.value) {
-                selectedAmount = parseInt(customInput.value);
-                
-                // Remove selection from preset buttons
-                document.querySelectorAll('.amount-btn').forEach(btn => {
-                    btn.style.background = '#f8f9fa';
-                    btn.style.borderColor = '#e0e0e0';
-                    btn.style.color = '#333';
-                });
-                
-                // Update display
-                updateAmountDisplay();
-                
-                // Re-render PayPal buttons
-                renderPayPalButtons();
-            }
-        }
-
-        function updateAmountDisplay() {
-            const displayAr = document.getElementById('amount-display-ar');
-            const displayEn = document.getElementById('amount-display-en');
-            const containerAr = document.getElementById('selected-amount-ar');
-            const containerEn = document.getElementById('selected-amount-en');
-            
-            if (displayAr) displayAr.textContent = selectedAmount;
-            if (displayEn) displayEn.textContent = selectedAmount;
-            if (containerAr) containerAr.style.display = 'block';
-            if (containerEn) containerEn.style.display = 'block';
-        }
-
-        function renderPayPalButtons() {
-            // Only render if PayPal SDK is loaded
-            if (typeof paypal === 'undefined') {
-                console.log('PayPal SDK not loaded yet');
-                return;
-            }
-
-            const currentLang = document.querySelector('.lang-content.active').id;
-            const containerId = currentLang === 'content-ar' ? 'paypal-button-container-ar' : 'paypal-button-container-en';
-            const container = document.getElementById(containerId);
-            
-            if (!container) return;
-            
-            // Clear existing buttons
-            container.innerHTML = '';
-            
-            // Render PayPal buttons
-            paypal.Buttons({
-                style: {
-                    layout: 'horizontal',
-                    color: 'blue',
-                    shape: 'rect',
-                    label: 'donate',
-                    height: 50
-                },
-                
-                createOrder: function(data, actions) {
-                    return actions.order.create({
-                        purchase_units: [{
-                            amount: {
-                                value: selectedAmount.toString(),
-                                currency_code: 'USD'
-                            },
-                            description: 'Gaza Children Emergency Relief Donation'
-                        }]
-                    });
-                },
-                
-                onApprove: function(data, actions) {
-                    return actions.order.capture().then(function(details) {
-                        // Track successful donation
-                        trackDonationClick('paypal_sdk_success');
-                        gtag('event', 'purchase', {
-                            'transaction_id': details.id,
-                            'value': selectedAmount,
-                            'currency': 'USD',
-                            'items': [{
-                                'item_id': 'gaza_donation',
-                                'item_name': 'Gaza Children Relief Donation',
-                                'category': 'Donation',
-                                'quantity': 1,
-                                'price': selectedAmount
-                            }]
-                        });
-                        
-                        // Show success message
-                        const message = currentLang === 'content-ar' ? 
-                            `شكراً لك! تم تسجيل تبرعك بمبلغ ${selectedAmount} بنجاح. نرقم المعاملة: ${details.id}` :
-                            `Thank you! Your donation of ${selectedAmount} has been processed successfully. Transaction ID: ${details.id}`;
-                        
-                        alert(message);
-                        
-                        // Optional: Redirect to thank you page
-                        // window.location.href = '/thank-you';
-                    });
-                },
-                
-                onError: function(err) {
-                    console.error('PayPal Error:', err);
-                    const message = currentLang === 'content-ar' ? 
-                        'حدث خطأ في عملية التبرع. يرجى المحاولة مرة أخرى أو استخدام الروابط البديلة أدناه.' :
-                        'An error occurred during donation. Please try again or use the alternative links below.';
-                    alert(message);
-                },
-                
-                onCancel: function(data) {
-                    const message = currentLang === 'content-ar' ? 
-                        'تم إلغاء عملية التبرع.' :
-                        'Donation was cancelled.';
-                    console.log('Donation cancelled:', data);
-                }
-                
-            }).render('#' + containerId);
-        }
-
-        // Initialize PayPal when SDK loads
-        function initializePayPal() {
-            if (typeof paypal !== 'undefined') {
-                // Select default amount
-                selectAmount(25);
-                renderPayPalButtons();
-                paypalButtonsRendered = true;
-            } else {
-                // Retry after a short delay
-                setTimeout(initializePayPal, 1000);
-            }
-        }
-
-        // Language switching functionality (updated to re-render PayPal buttons)
-        function switchLanguage(lang) {
-            trackLanguageChange(lang);
-            
-            // Hide all content
-            const contents = document.querySelectorAll('.lang-content');
-            contents.forEach(content => content.classList.remove('active'));
-            
-            // Show selected language content
-            const selectedContent = document.getElementById(`content-${lang}`);
-            if (selectedContent) {
-                selectedContent.classList.add('active');
-            }
-            
-            // Update active language button
-            const langButtons = document.querySelectorAll('.lang-btn');
-            langButtons.forEach(btn => btn.classList.remove('active'));
-            
-            const activeButton = document.querySelector(`[data-lang="${lang}"]`);
-            if (activeButton) {
-                activeButton.classList.add('active');
-            }
-            
-            // Update page direction and language
-            const body = document.body;
-            if (lang === 'ar') {
-                body.setAttribute('dir', 'rtl');
-                body.setAttribute('lang', 'ar');
-                body.classList.remove('en');
-            } else {
-                body.setAttribute('dir', 'ltr');
-                body.setAttribute('lang', lang);
-                body.classList.add('en');
-            }
-            
-            // Update page title based on language
-            const titles = {
-                'ar': 'معاً من أجل أطفال غزة - حملة التبرعات الإنسانية',
-                'en': 'Together for Gaza\'s Children - Humanitarian Donation Campaign',
-                'fr': 'Ensemble pour les Enfants de Gaza - Campagne de Dons Humanitaires',
-                'es': 'Juntos por los Niños de Gaza - Campaña de Donaciones Humanitarias'
-            };
-            
-            document.title = titles[lang] || titles['ar'];
-            
-            // Save language preference
-            try {
-                localStorage.setItem('preferred-language', lang);
-            } catch(e) {
-                console.log('localStorage not available');
-            }
-            
-            // Re-render PayPal buttons for new language
-            if (paypalButtonsRendered) {
-                setTimeout(renderPayPalButtons, 500);
-            }
-        }
-        
-        // Load saved language preference
-        function loadLanguagePreference() {
-            try {
-                const savedLang = localStorage.getItem('preferred-language') || 'ar';
-                switchLanguage(savedLang);
-            } catch(e) {
-                switchLanguage('ar');
-            }
-        }
-
-        // Share functions with tracking
-        function shareWhatsApp(lang) {
-            trackSocialShare('whatsapp_' + lang);
-            const messages = {
-                'ar': "ساهم معنا في مساعدة أطفال غزة - حملة تبرعات إنسانية عاجلة 🇵🇸💙",
-                'en': "Help us support Gaza's children - Urgent humanitarian donation campaign 🇵🇸💙",
-                'fr': "Aidez-nous à soutenir les enfants de Gaza - Campagne de dons humanitaires urgente 🇵🇸💙",
-                'es': "Ayúdanos a apoyar a los niños de Gaza - Campaña urgente de donaciones humanitarias 🇵🇸💙"
-            };
-            const message = messages[lang] || messages['ar'];
-            const url = window.location.href;
-            window.open(`https://wa.me/?text=${encodeURIComponent(message + " " + url)}`, '_blank');
-        }
-
-        function shareFacebook() {
-            trackSocialShare('facebook');
-            const url = window.location.href;
-            window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
-        }
-
-        function shareTwitter(lang) {
-            trackSocialShare('twitter_' + lang);
-            const messages = {
-                'ar': "ساهم معنا في مساعدة أطفال غزة - حملة تبرعات إنسانية عاجلة 🇵🇸💙 #غزة #تبرعات #مساعدة_الأطفال",
-                'en': "Help us support Gaza's children - Urgent humanitarian donation campaign 🇵🇸💙 #Gaza #Donations #HelpChildren",
-                'fr': "Aidez-nous à soutenir les enfants de Gaza 🇵🇸💙 #Gaza #Dons #AideHumanitaire",
-                'es': "Ayúdanos a apoyar a los niños de Gaza 🇵🇸💙 #Gaza #Donaciones #AyudaHumanitaria"
-            };
-            const message = messages[lang] || messages['ar'];
-            const url = window.location.href;
-            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}&url=${encodeURIComponent(url)}`, '_blank');
-        }
-
-        function shareTelegram(lang) {
-            trackSocialShare('telegram_' + lang);
-            const messages = {
-                'ar': "ساهم معنا في مساعدة أطفال غزة - حملة تبرعات إنسانية عاجلة 🇵🇸💙",
-                'en': "Help us support Gaza's children - Urgent humanitarian donation campaign 🇵🇸💙",
-                'fr': "Aidez-nous à soutenir les enfants de Gaza 🇵🇸💙",
-                'es': "Ayúdanos a apoyar a los niños de Gaza 🇵🇸💙"
-            };
-            const message = messages[lang] || messages['ar'];
-            const url = window.location.href;
-            window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(message)}`, '_blank');
-        }
-
-        // Contact form submission
-        function submitForm(event) {
-            event.preventDefault();
-            
-            const formData = new FormData(event.target);
-            const data = Object.fromEntries(formData);
-            
-            // Track form submission
-            gtag('event', 'form_submit', {
-                'event_category': 'contact',
-                'event_label': data.subject
-            });
-            
-            // Here you would normally send the data to your server
-            // For now, we'll just show a success message
-            alert('تم إرسال رسالتك بنجاح! سنرد عليك خلال 24 ساعة. / Your message has been sent successfully! We will respond within 24 hours.');
-            
-            // Reset form
-            event.target.reset();
-        }
-
-        // Animation on scroll
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.stat-card, .impact-card, .payment-card');
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.style.transform = 'translateY(0)';
-                    element.style.opacity = '1';
-                }
-            });
-        }
-
-        window.addEventListener('scroll', animateOnScroll);
-
-        // Counter animation
-        function animateCounters() {
-            const counters = document.querySelectorAll('.stat-number');
-            counters.forEach(counter => {
-                const target = counter.innerText;
-                const cleanTarget = target.replace(/[^\d.]/g, '');
-                const increment = parseFloat(cleanTarget) / 100;
-                let current = 0;
-                
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= parseFloat(cleanTarget)) {
-                        counter.innerText = target;
-                        clearInterval(timer);
-                    } else {
-                        if (target.includes('M')) {
-                            counter.innerText = (current / 1000000).toFixed(1) + 'M';
-                        } else if (target.includes('K')) {
-                            counter.innerText = Math.floor(current) + 'K+';
-                        } else {
-                            counter.innerText = Math.floor(current);
-                        }
-                    }
-                }, 20);
-            });
-        }
-
-        // Start animations when page loads
-        window.addEventListener('load', () => {
-            loadLanguagePreference();
-            setTimeout(animateCounters, 1000);
-            
-            // Initialize PayPal after page load
-            setTimeout(initializePayPal, 2000);
-        });
-    </script>
-</body>
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>معاً من أجل أطفال غزة - حملة التبرعات الإنسانية</title>
     
-    <!-- SEO Meta Tags -->
+    <!-- Essential Meta Tags -->
     <meta name="description" content="ساعد أطفال غزة المحتاجين. حملة تبرعات إنسانية شفافة وموثقة لتوفير الطعام والدواء والمأوى للأطفال الأبرياء.">
-    <meta name="keywords" content="تبرعات غزة, مساعدة أطفال, حملة خيرية, تبرع إنساني, أطفال فلسطين">
-    <meta name="author" content="حملة أطفال غزة">
+    <meta name="keywords" content="تبرعات غزة, مساعدة أطفال, حملة خيرية, تبرع إنساني, أطفال فلسطين, Gaza donations, Palestine children">
+    <meta name="author" content="حملة الأمل لغزة">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#4CAF50">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="معاً من أجل أطفال غزة - حملة التبرعات الإنسانية">
     <meta property="og:description" content="ساعد أطفال غزة المحتاجين. كل تبرع يحدث فرقاً حقيقياً في حياة الأطفال الأبرياء.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hope4gaza.netlify.app">
-    <meta property="og:image" content="https://hope4gaza.netlify.app/campaign-image.jpg">
+    <meta property="og:image" content="https://hope4gaza.netlify.app/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Hope4Gaza">
     
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hope4gaza">
     <meta name="twitter:title" content="معاً من أجل أطفال غزة">
     <meta name="twitter:description" content="ساعد أطفال غزة المحتاجين. حملة تبرعات إنسانية شفافة.">
+    <meta name="twitter:image" content="https://hope4gaza.netlify.app/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Preconnect for better performance -->
+    <link rel="preconnect" href="https://www.paypal.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
     
     <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD&intent=capture&components=buttons"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD&intent=capture&components=buttons" defer></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Z7Z7VJMVB"></script>
     <script>
-        const GA_MEASUREMENT_ID = 'G-1Z7Z7VJMVB';
-        
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', GA_MEASUREMENT_ID);
+        gtag('config', 'G-1Z7Z7VJMVB', {
+            page_title: 'Hope4Gaza Campaign',
+            page_location: window.location.href
+        });
         
-        // Track donation button clicks
-        function trackDonationClick(source) {
-            gtag('event', 'click', {
-                'event_category': 'donation',
-                'event_label': source,
-                'value': 1
-            });
-        }
-        
-        // Track language changes
-        function trackLanguageChange(language) {
-            gtag('event', 'language_change', {
-                'event_category': 'engagement',
-                'event_label': language
-            });
-        }
-        
-        // Track social shares
-        function trackSocialShare(platform) {
-            gtag('event', 'share', {
-                'event_category': 'social',
-                'event_label': platform
-            });
+        // Enhanced tracking function
+        function trackEvent(category, action, label, value) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', action, {
+                    'event_category': category,
+                    'event_label': label,
+                    'value': value || 1,
+                    'send_to': 'G-1Z7Z7VJMVB'
+                });
+            }
+            console.log(`Event tracked: ${category} - ${action} - ${label}`);
         }
     </script>
     
     <style>
-        * {
+        /* ===== CSS RESET & BASE ===== */
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Arial', 'Tahoma', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            transition: all 0.3s ease;
+        :root {
+            --primary-color: #4CAF50;
+            --primary-dark: #45a049;
+            --secondary-color: #2196F3;
+            --accent-color: #FF9800;
+            --text-color: #2c3e50;
+            --text-light: #7f8c8d;
+            --background-light: #f8f9fa;
+            --border-color: #e0e0e0;
+            --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
+            --shadow-medium: 0 8px 25px rgba(0,0,0,0.15);
+            --shadow-heavy: 0 15px 40px rgba(0,0,0,0.2);
+            --border-radius: 15px;
+            --transition: all 0.3s ease;
         }
 
-        body.en {
-            font-family: 'Arial', 'Helvetica', sans-serif;
-            direction: ltr;
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        body[dir="ltr"] {
+            font-family: 'Segoe UI', 'Arial', 'Helvetica', sans-serif;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 20px;
         }
 
-        /* Language Switcher */
+        /* ===== LANGUAGE SWITCHER ===== */
         .language-switcher {
             position: fixed;
             top: 20px;
             right: 20px;
             z-index: 1000;
             display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 8px;
+            border-radius: 25px;
+            box-shadow: var(--shadow-medium);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .lang-btn {
             padding: 8px 16px;
-            background: rgba(255, 255, 255, 0.9);
+            background: transparent;
             border: 2px solid transparent;
-            border-radius: 25px;
+            border-radius: 20px;
             cursor: pointer;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: #333;
+            font-weight: 600;
             font-size: 12px;
-        }
-
-        .lang-btn.active {
-            background: linear-gradient(135deg, #4CAF50, #45a049);
-            color: white;
-            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+            color: var(--text-color);
+            transition: var(--transition);
+            outline: none;
         }
 
         .lang-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            background: rgba(76, 175, 80, 0.1);
+            border-color: var(--primary-color);
         }
 
-        .hero-section {
+        .lang-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .lang-btn:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+
+        /* ===== CONTENT SECTIONS ===== */
+        .content-section {
             background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
+            border-radius: var(--border-radius);
             padding: 40px;
             margin-bottom: 30px;
-            margin-top: 80px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            text-align: center;
+            box-shadow: var(--shadow-medium);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             position: relative;
             overflow: hidden;
         }
 
-        .hero-section::before {
+        .content-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero-section {
+            text-align: center;
+            margin-top: 100px;
+            position: relative;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.95));
+        }
+
+        .hero-section::after {
             content: '';
             position: absolute;
             top: -50%;
             left: -50%;
             width: 200%;
             height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(102, 126, 234, 0.1), transparent);
-            animation: shimmer 3s infinite;
+            background: linear-gradient(45deg, transparent, rgba(76, 175, 80, 0.03), transparent);
+            animation: heroShimmer 6s infinite;
+            pointer-events: none;
         }
 
-        @keyframes shimmer {
+        @keyframes heroShimmer {
             0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
             100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
         }
 
         .hero-content {
             position: relative;
-            z-index: 1;
+            z-index: 2;
         }
 
-        h1 {
-            font-size: 3rem;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        .hero-title {
+            font-size: clamp(2.2rem, 6vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, var(--text-color), var(--primary-color));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             animation: fadeInUp 1s ease-out;
+            line-height: 1.2;
         }
 
-        .subtitle {
-            font-size: 1.3rem;
-            color: #7f8c8d;
-            margin-bottom: 30px;
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            color: var(--text-light);
+            margin-bottom: 35px;
             animation: fadeInUp 1s ease-out 0.2s both;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(40px);
             }
             to {
                 opacity: 1;
@@ -864,103 +246,22 @@
             }
         }
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-        }
-
-        .stat-card {
-            background: linear-gradient(135deg, #ff6b6b, #ee5a5a);
+        /* ===== URGENCY BANNER ===== */
+        .urgency-banner {
+            background: linear-gradient(135deg, #ff4757, #ff3742);
             color: white;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            transform: translateY(0);
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
-        }
-
-        .stat-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(255, 107, 107, 0.4);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .stat-label {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        .donation-section {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            text-align: center;
-        }
-
-        .payment-options {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            padding: 20px 30px;
+            border-radius: var(--border-radius);
             margin: 30px 0;
-        }
-
-        .payment-card {
-            background: #f8f9fa;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .payment-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .chuffed-iframe-container {
-            display: flex;
-            justify-content: center;
-            margin: 30px 0;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 15px;
-            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .chuffed-iframe-container iframe {
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .donation-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #4CAF50, #45a049);
-            color: white;
-            padding: 20px 40px;
-            font-size: 1.5rem;
-            text-decoration: none;
-            border-radius: 50px;
-            margin: 20px 10px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(255, 71, 87, 0.3);
+            animation: urgencyPulse 3s infinite;
             position: relative;
             overflow: hidden;
-            border: none;
-            cursor: pointer;
         }
 
-        .donation-button::before {
+        .urgency-banner::before {
             content: '';
             position: absolute;
             top: 0;
@@ -968,50 +269,430 @@
             width: 100%;
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.5s;
+            animation: urgencySlide 2s infinite;
         }
 
-        .donation-button:hover::before {
+        @keyframes urgencyPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        @keyframes urgencySlide {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* ===== PROGRESS BAR ===== */
+        .progress-container {
+            margin: 35px 0;
+            position: relative;
+        }
+
+        .progress-bar {
+            background: #e8f4f8;
+            border-radius: 30px;
+            padding: 4px;
+            box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            height: 45px;
+            border-radius: 30px;
+            width: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            transition: width 3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-fill::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: progressSlide 2s infinite;
+        }
+
+        @keyframes progressSlide {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* ===== STATISTICS GRID ===== */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 35px 25px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow-medium);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            transform: scale(0);
+            transition: transform 0.6s ease;
+        }
+
+        .stat-card:hover::before {
+            transform: scale(1);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-15px) scale(1.03);
+            box-shadow: 0 25px 50px rgba(102, 126, 234, 0.4);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ===== DONATION SECTION ===== */
+        .donation-section h2 {
+            text-align: center;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 40px;
+            color: var(--text-color);
+            font-weight: 700;
+        }
+
+        .payment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .payment-card {
+            background: var(--background-light);
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 35px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .payment-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(76, 175, 80, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .payment-card:hover::before {
             left: 100%;
         }
 
-        .donation-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(76, 175, 80, 0.4);
+        .payment-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-heavy);
         }
 
-        .paypal-button {
+        .payment-card h3 {
+            color: var(--text-color);
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        /* ===== CHUFFED IFRAME ===== */
+        .chuffed-container {
+            text-align: center;
+            margin: 25px 0;
+            padding: 25px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            border: 1px solid var(--border-color);
+        }
+
+        .chuffed-container iframe {
+            border-radius: 10px;
+            box-shadow: var(--shadow-medium);
+            max-width: 100%;
+            height: 380px;
+        }
+
+        /* ===== AMOUNT SELECTION ===== */
+        .amount-section {
+            margin: 25px 0;
+        }
+
+        .amount-label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: var(--text-color);
+            font-size: 1.1rem;
+        }
+
+        .amount-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .amount-btn {
+            padding: 18px;
+            border: 2px solid var(--border-color);
+            background: white;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-color);
+            transition: var(--transition);
+            outline: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .amount-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: var(--primary-color);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease;
+        }
+
+        .amount-btn:hover::before {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+
+        .amount-btn:hover {
+            border-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .amount-btn.selected {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+            transform: scale(1.05);
+        }
+
+        .amount-btn:focus {
+            outline: 3px solid rgba(76, 175, 80, 0.3);
+            outline-offset: 2px;
+        }
+
+        /* ===== CUSTOM AMOUNT INPUT ===== */
+        .custom-amount {
+            margin: 25px 0;
+        }
+
+        .custom-amount label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .custom-amount input {
+            width: 100%;
+            padding: 18px;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-color);
+            background: white;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .custom-amount input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 15px rgba(76, 175, 80, 0.2);
+        }
+
+        .custom-amount input::placeholder {
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+        /* ===== SELECTED AMOUNT DISPLAY ===== */
+        .selected-amount {
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+            border-radius: 12px;
+            border: 2px solid var(--primary-color);
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: var(--transition);
+        }
+
+        .selected-amount.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .amount-display {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-top: 5px;
+        }
+
+        /* ===== PAYPAL CONTAINER ===== */
+        .paypal-container {
+            margin: 25px 0;
+            min-height: 80px;
+            border-radius: 12px;
+            background: white;
+            padding: 15px;
+            border: 2px solid var(--border-color);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .paypal-container.loaded {
+            border-color: #0070ba;
+            box-shadow: 0 0 15px rgba(0, 112, 186, 0.2);
+        }
+
+        .paypal-loading {
+            text-align: center;
+            padding: 25px;
+            color: var(--text-light);
+            font-size: 16px;
+        }
+
+        .paypal-loading::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-color);
+            border-top: 2px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* ===== FALLBACK LINKS ===== */
+        .fallback-section {
+            margin-top: 25px;
+            padding: 20px;
+            background: #f0f7ff;
+            border-radius: 12px;
+            border: 1px solid #e3f2fd;
+        }
+
+        .fallback-section h4 {
+            margin-bottom: 15px;
+            color: #1976d2;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .fallback-grid {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .fallback-btn {
+            padding: 12px 20px;
             background: linear-gradient(135deg, #0070ba, #003087);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-block;
         }
 
-        .paypal-button:hover {
-            box-shadow: 0 15px 30px rgba(0, 112, 186, 0.4);
+        .fallback-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 112, 186, 0.3);
         }
 
-        .impact-section {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-        }
-
+        /* ===== IMPACT SECTION ===== */
         .impact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
+            gap: 25px;
+            margin: 40px 0;
         }
 
         .impact-card {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
-            padding: 30px;
-            border-radius: 15px;
-            transition: all 0.3s ease;
+            padding: 35px;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
             position: relative;
             overflow: hidden;
+            cursor: pointer;
         }
 
         .impact-card::before {
@@ -1021,154 +702,135 @@
             right: -50%;
             width: 100%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-            transform: rotate(45deg);
-            transition: all 0.3s ease;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+            transform: rotate(45deg) scale(0);
+            transition: transform 0.6s ease;
         }
 
         .impact-card:hover::before {
-            right: -30%;
+            transform: rotate(45deg) scale(1);
         }
 
         .impact-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
         }
 
-        .contact-section {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-group {
+        .impact-card h3 {
+            font-size: 1.8rem;
             margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            font-weight: 700;
         }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            background: #f8f9fa;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #4CAF50;
-            background: white;
-            box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
-        }
-
-        .form-group textarea {
-            height: 120px;
-            resize: vertical;
-        }
-
-        .submit-button {
-            background: linear-gradient(135deg, #4CAF50, #45a049);
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 25px;
+        .impact-card p {
             font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+            opacity: 0.95;
         }
 
-        .submit-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
-        }
-
-        .social-proof {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
+        /* ===== TESTIMONIALS ===== */
+        .testimonials-section h2 {
             text-align: center;
+            margin-bottom: 40px;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: var(--text-color);
+        }
+
+        .testimonials {
+            margin: 40px 0;
         }
 
         .testimonial {
+            background: white;
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            position: relative;
+            border-left: 4px solid var(--primary-color);
             font-style: italic;
             font-size: 1.2rem;
-            color: #555;
-            margin: 20px 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            line-height: 1.8;
+            color: var(--text-color);
         }
 
-        .urgency-banner {
-            background: linear-gradient(135deg, #ff4757, #ff3742);
-            color: white;
-            padding: 20px;
+        .testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-color);
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-family: serif;
+            opacity: 0.3;
+        }
+
+        .testimonial::after {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-color);
+            position: absolute;
+            bottom: -30px;
+            right: 20px;
+            font-family: serif;
+            opacity: 0.3;
+        }
+
+        /* ===== SHARE SECTION ===== */
+        .share-section {
             text-align: center;
-            border-radius: 10px;
-            margin: 20px 0;
-            animation: pulse 2s infinite;
+            margin: 40px 0;
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.02); }
-            100% { transform: scale(1); }
+        .share-section h2 {
+            margin-bottom: 15px;
+            color: var(--text-color);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
         }
 
-        .footer {
-            text-align: center;
-            padding: 30px;
-            color: white;
-            background: rgba(0, 0, 0, 0.1);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
+        .share-section p {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
         }
 
         .share-buttons {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin: 30px 0;
+            margin: 25px 0;
             flex-wrap: wrap;
         }
 
         .share-btn {
-            padding: 12px 24px;
+            padding: 16px 32px;
             border: none;
             border-radius: 25px;
             cursor: pointer;
-            font-size: 14px;
-            font-weight: bold;
+            font-size: 16px;
+            font-weight: 600;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
+            gap: 10px;
             color: white;
+            transition: var(--transition);
+            box-shadow: var(--shadow-medium);
+            outline: none;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .share-btn:focus {
+            outline: 3px solid rgba(255, 255, 255, 0.3);
+            outline-offset: 2px;
         }
 
         .share-btn.whatsapp {
@@ -1187,47 +849,185 @@
             background: linear-gradient(135deg, #0088cc, #006bb3);
         }
 
-        .share-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        /* ===== CONTACT SECTION ===== */
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--text-color);
+            font-size: clamp(2rem, 4vw, 2.8rem);
         }
 
-        /* Hidden content for different languages */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            font-size: 16px;
+            color: var(--text-color);
+            background: white;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 15px rgba(76, 175, 80, 0.2);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+            font-family: inherit;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-light);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: var(--shadow-medium);
+            outline: none;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .submit-btn:focus {
+            outline: 3px solid rgba(76, 175, 80, 0.3);
+            outline-offset: 2px;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+            padding: 25px;
+            background: var(--background-light);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-info h4 {
+            color: var(--text-color);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+            color: var(--primary-dark);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(15px);
+            margin-top: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer h3 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        /* ===== LANGUAGE CONTENT ===== */
         .lang-content {
             display: none;
+            animation: fadeIn 0.5s ease-in-out;
         }
 
         .lang-content.active {
             display: block;
         }
 
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .payment-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
             .container {
-                padding: 15px;
+                padding: 0 15px;
             }
-            
-            h1 {
-                font-size: 2rem;
+
+            .hero-section {
+                margin-top: 120px;
             }
-            
-            .hero-section,
-            .donation-section,
-            .impact-section,
-            .social-proof,
-            .contact-section {
+
+            .content-section {
                 padding: 25px;
-                margin-top: 100px;
-            }
-            
-            .stats-grid {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                gap: 15px;
-            }
-            
-            .donation-button {
-                padding: 15px 30px;
-                font-size: 1.2rem;
-                margin: 10px 5px;
             }
 
             .language-switcher {
@@ -1236,196 +1036,1315 @@
                 right: 0;
                 justify-content: center;
                 margin-bottom: 20px;
+                width: 100%;
             }
 
-            .chuffed-iframe-container iframe {
-                width: 100% !important;
-                max-width: 100% !important;
-            }
-
-            .payment-options {
+            .stats-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
+
+            .impact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .amount-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .share-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .share-btn {
+                width: 250px;
+                justify-content: center;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .fallback-grid {
+                justify-content: center;
+            }
+
+            .fallback-btn {
+                min-width: 80px;
+            }
         }
 
-        .progress-bar {
-            background: #e0e0e0;
-            border-radius: 25px;
-            padding: 3px;
-            margin: 20px 0;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        @media (max-width: 480px) {
+            .lang-btn {
+                padding: 6px 12px;
+                font-size: 11px;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .content-section {
+                padding: 20px;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .amount-btn {
+                padding: 14px;
+                font-size: 16px;
+            }
+
+            .custom-amount input {
+                padding: 14px;
+                font-size: 16px;
+            }
+
+            .share-btn {
+                width: 200px;
+                padding: 12px 24px;
+                font-size: 14px;
+            }
         }
 
-        .progress-fill {
-            background: linear-gradient(135deg, #4CAF50, #45a049);
+        /* ===== ACCESSIBILITY ===== */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            .language-switcher,
+            .paypal-container,
+            .share-buttons,
+            .contact-form {
+                display: none;
+            }
+
+            body {
+                background: white;
+            }
+
+            .content-section {
+                background: white;
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+
+        /* ===== HIGH CONTRAST MODE ===== */
+        @media (prefers-contrast: high) {
+            .content-section {
+                border: 2px solid var(--text-color);
+            }
+
+            .amount-btn:focus,
+            .share-btn:focus,
+            .submit-btn:focus {
+                outline: 4px solid var(--text-color);
+            }
+        }
+
+        /* ===== LOADING STATES ===== */
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 30px;
             height: 30px;
-            border-radius: 25px;
-            width: 65%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            transition: width 2s ease-in-out;
-            animation: progressAnimation 2s ease-in-out;
-        }
-
-        @keyframes progressAnimation {
-            from { width: 0%; }
-            to { width: 65%; }
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: spin 1s linear infinite;
         }
     </style>
 </head>
 <body>
     <!-- Language Switcher -->
     <div class="language-switcher">
-        <button class="lang-btn active" onclick="switchLanguage('ar')" data-lang="ar">العربية</button>
-        <button class="lang-btn" onclick="switchLanguage('en')" data-lang="en">English</button>
-        <button class="lang-btn" onclick="switchLanguage('fr')" data-lang="fr">Français</button>
-        <button class="lang-btn" onclick="switchLanguage('es')" data-lang="es">Español</button>
+        <button class="lang-btn active" data-lang="ar" type="button">العربية</button>
+        <button class="lang-btn" data-lang="en" type="button">English</button>
+        <button class="lang-btn" data-lang="fr" type="button">Français</button>
+        <button class="lang-btn" data-lang="es" type="button">Español</button>
     </div>
 
     <div class="container">
-        <!-- Arabic Content -->
+        <!-- ARABIC CONTENT -->
         <div class="lang-content active" id="content-ar">
             <!-- Hero Section -->
-            <div class="hero-section">
+            <section class="content-section hero-section">
                 <div class="hero-content">
-                    <h1>معاً من أجل أطفال غزة</h1>
-                    <p class="subtitle">كن جزءاً من الأمل - ساهم في إنقاذ حياة الأطفال الأبرياء</p>
+                    <h1 class="hero-title">معاً من أجل أطفال غزة</h1>
+                    <p class="hero-subtitle">كن جزءاً من الأمل - ساهم في إنقاذ حياة الأطفال الأبرياء</p>
                     
                     <div class="urgency-banner">
                         ⏰ الوقت ينفد - كل دقيقة تحسب في إنقاذ الأرواح
                     </div>
 
-                    <!-- Progress Bar -->
-                    <div class="progress-bar">
-                        <div class="progress-fill">
-                            تم جمع 65% من الهدف
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressBar">
+                                تم جمع 65% من الهدف
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Statistics -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">2.3M</div>
-                    <div class="stat-label">طفل يحتاج المساعدة</div>
+            <!-- Statistics Section -->
+            <section class="content-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="2300000">2.3M</div>
+                        <div class="stat-label">طفل يحتاج المساعدة</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="50000">50K+</div>
+                        <div class="stat-label">متبرع كريم</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="24">24/7</div>
+                        <div class="stat-label">مساعدة مستمرة</div>
+                    </div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-number">50K+</div>
-                    <div class="stat-label">متبرع كريم</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">مساعدة مستمرة</div>
-                </div>
-            </div>
+            </section>
 
             <!-- Donation Section -->
-            <div class="donation-section">
-                <h2 style="color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">تبرع الآن وأحدث الفرق</h2>
+            <section class="content-section donation-section">
+                <h2>💝 تبرع الآن وأحدث الفرق</h2>
                 
-                <!-- Payment Options -->
-                <div class="payment-options">
+                <div class="payment-grid">
                     <!-- Chuffed Option -->
                     <div class="payment-card">
-                        <h3 style="color: #2c3e50; margin-bottom: 20px;">💝 التبرع عبر Chuffed</h3>
-                        <div class="chuffed-iframe-container">
-                            <iframe width="100%" height="380" src="https://chuffed.org/iframe/124859/25aae1" frameborder="0" allowfullscreen style="max-width:310px;border:0px solid #fff;margin:0 auto;" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+                        <h3>🌟 التبرع عبر Chuffed</h3>
+                        <p style="color: var(--text-light); margin-bottom: 20px;">منصة التبرعات الموثوقة عالمياً</p>
+                        
+                        <div class="chuffed-container">
+                            <iframe width="100%" height="380" 
+                                    src="https://chuffed.org/iframe/124859/25aae1" 
+                                    frameborder="0" 
+                                    allowfullscreen 
+                                    style="max-width:300px;"
+                                    sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                                    title="Chuffed Donation Widget">
+                            </iframe>
                         </div>
-                        <p style="color: #666; margin-bottom: 15px;">أو تبرع مباشرة:</p>
-                        <a href="https://chuffed.org/project/gaza-children-emergency-relief" target="_blank" class="donation-button" onclick="trackDonationClick('chuffed_direct_ar')">
-                            💝 تبرع عبر Chuffed
-                        </a>
+                        
+                        <div class="fallback-section">
+                            <h4>💡 أو تبرع مباشرة</h4>
+                            <div class="fallback-grid">
+                                <a href="https://chuffed.org/project/gaza-children-emergency-relief" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="fallback-btn">
+                                    تبرع عبر Chuffed
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- PayPal Option -->
                     <div class="payment-card">
-                        <h3 style="color: #2c3e50; margin-bottom: 20px;">💳 التبرع المباشر - PayPal</h3>
-                        <p style="color: #666; margin-bottom: 20px;">تبرع مباشرة وآمن عبر PayPal بدون مغادرة الموقع</p>
+                        <h3>💳 التبرع المباشر - PayPal</h3>
+                        <p style="color: var(--text-light); margin-bottom: 20px;">تبرع بأمان بدون مغادرة الموقع</p>
                         
-                        <!-- PayPal Amount Selection -->
-                        <div style="margin: 20px 0;">
-                            <label style="display: block; margin-bottom: 10px; font-weight: bold; color: #2c3e50;">اختر مبلغ التبرع:</label>
-                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 15px;">
-                                <button class="amount-btn" onclick="selectAmount(25)" data-amount="25" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
-                                    $25
-                                </button>
-                                <button class="amount-btn" onclick="selectAmount(50)" data-amount="50" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
-                                    $50
-                                </button>
-                                <button class="amount-btn" onclick="selectAmount(100)" data-amount="100" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
-                                    $100
-                                </button>
-                                <button class="amount-btn" onclick="selectAmount(200)" data-amount="200" style="padding: 12px; border: 2px solid #e0e0e0; background: #f8f9fa; border-radius: 8px; cursor: pointer; font-size: 16px; transition: all 0.3s ease;">
-                                    $200
-                                </button>
+                        <div class="amount-section">
+                            <label class="amount-label">اختر مبلغ التبرع:</label>
+                            <div class="amount-grid">
+                                <button class="amount-btn selected" data-amount="25" type="button">$25</button>
+                                <button class="amount-btn" data-amount="50" type="button">$50</button>
+                                <button class="amount-btn" data-amount="100" type="button">$100</button>
+                                <button class="amount-btn" data-amount="200" type="button">$200</button>
                             </div>
                             
-                            <!-- Custom Amount Input -->
-                            <div style="margin-bottom: 20px;">
-                                <label style="display: block; margin-bottom: 8px; color: #2c3e50;">أو أدخل مبلغاً مخصصاً:</label>
-                                <input type="number" id="customAmount" placeholder="مثال: 75" min="1" max="10000" style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px;" oninput="selectCustomAmount()">
+                            <div class="custom-amount">
+                                <label for="customAmountAr">أو أدخل مبلغاً مخصصاً:</label>
+                                <input type="number" 
+                                       id="customAmountAr" 
+                                       placeholder="مثال: 75" 
+                                       min="1" 
+                                       max="10000">
                             </div>
                         </div>
                         
-                        <!-- PayPal Buttons Container -->
-                        <div id="paypal-button-container-ar" style="margin: 20px 0;"></div>
-                        
-                        <!-- Selected Amount Display -->
-                        <div id="selected-amount-ar" style="text-align: center; margin: 15px 0; font-size: 18px; font-weight: bold; color: #4CAF50; display: none;">
-                            المبلغ المختار: $<span id="amount-display-ar">25</span>
+                        <div class="selected-amount show" id="selectedAmountAr">
+                            <div style="font-size: 16px; margin-bottom: 5px;">المبلغ المختار:</div>
+                            <div class="amount-display">$<span id="amountDisplayAr">25</span></div>
                         </div>
                         
-                        <!-- Fallback Links -->
-                        <div style="margin-top: 20px; text-align: center; padding: 20px; background: #f0f0f0; border-radius: 10px;">
-                            <p style="margin-bottom: 15px; font-weight: bold;">💡 طرق التبرع البديلة:</p>
-                            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                                <a href="https://paypal.me/hope4gaza/25" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$25</a>
-                                <a href="https://paypal.me/hope4gaza/50" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$50</a>
-                                <a href="https://paypal.me/hope4gaza/100" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">$100</a>
-                                <a href="https://paypal.me/hope4gaza" target="_blank" style="padding: 8px 16px; background: #0070ba; color: white; text-decoration: none; border-radius: 5px; font-size: 14px;">مخصص</a>
+                        <div class="paypal-container" id="paypalContainerAr">
+                            <div class="paypal-loading">
+                                جارٍ تحميل أزرار PayPal...
+                            </div>
+                        </div>
+                        
+                        <div class="fallback-section">
+                            <h4>💡 طرق الدفع البديلة</h4>
+                            <div class="fallback-grid">
+                                <a href="https://paypal.me/hope4gaza/25" target="_blank" rel="noopener noreferrer" class="fallback-btn">$25</a>
+                                <a href="https://paypal.me/hope4gaza/50" target="_blank" rel="noopener noreferrer" class="fallback-btn">$50</a>
+                                <a href="https://paypal.me/hope4gaza/100" target="_blank" rel="noopener noreferrer" class="fallback-btn">$100</a>
+                                <a href="https://paypal.me/hope4gaza/200" target="_blank" rel="noopener noreferrer" class="fallback-btn">$200</a>
+                                <a href="https://paypal.me/hope4gaza" target="_blank" rel="noopener noreferrer" class="fallback-btn">مخصص</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div style="margin: 30px 0; font-size: 1.1rem; color: #555;">
-                    <p><strong>مبالغ التبرع المقترحة:</strong></p>
-                    <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
-                        <span style="background: #f39c12; color: white; padding: 10px 20px; border-radius: 25px;">$25</span>
-                        <span style="background: #e74c3c; color: white; padding: 10px 20px; border-radius: 25px;">$50</span>
-                        <span style="background: #9b59b6; color: white; padding: 10px 20px; border-radius: 25px;">$100</span>
-                        <span style="background: #1abc9c; color: white; padding: 10px 20px; border-radius: 25px;">$200</span>
-                    </div>
-                </div>
-            </div>
+            </section>
 
             <!-- Impact Section -->
-            <div class="impact-section">
-                <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px; font-size: 2.5rem;">تأثير تبرعك</h2>
+            <section class="content-section">
+                <h2 style="text-align: center; margin-bottom: 40px;">🎯 تأثير تبرعك</h2>
                 
                 <div class="impact-grid">
                     <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🍞 $25</h3>
-                        <p>توفر وجبات غذائية لطفل لمدة أسبوع كامل</p>
+                        <h3>🍞 $25</h3>
+                        <p>توفر وجبات غذائية مغذية لطفل لمدة أسبوع كامل مع جميع العناصر الأساسية</p>
                     </div>
                     <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">💊 $50</h3>
-                        <p>توفر الأدوية الأساسية والمستلزمات الطبية الضرورية</p>
+                        <h3>💊 $50</h3>
+                        <p>توفر الأدوية الأساسية والمستلزمات الطبية الضرورية لإنقاذ الأرواح</p>
                     </div>
                     <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">🏠 $100</h3>
-                        <p>توفر مأوى مؤقت آمن لعائلة نازحة</p>
+                        <h3>🏠 $100</h3>
+                        <p>توفر مأوى مؤقت آمن ودافئ لعائلة نازحة مع المستلزمات الأساسية</p>
                     </div>
                     <div class="impact-card">
-                        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">📚 $200</h3>
-                        <p>توفر مستلزمات تعليمية وأدوات مدرسية لعشرات الأطفال</p>
+                        <h3>📚 $200</h3>
+                        <p>توفر مستلزمات تعليمية وأدوات مدرسية لعشرات الأطفال لمواصلة تعليمهم</p>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="content-section testimonials-section">
+                <h2>💬 شهادات المتبرعين</h2>
+                
+                <div class="testimonials">
+                    <div class="testimonial">
+                        شعرت بسعادة غامرة عندما ساهمت في هذه الحملة. كل دولار يذهب لمساعدة الأطفال الأبرياء وإنقاذ حياتهم من المعاناة اليومية
+                    </div>
+                    
+                    <div class="testimonial">
+                        الشفافية في هذه الحملة مميزة جداً. أرى بوضوح كيف تُستخدم تبرعاتي لمساعدة الأطفال المحتاجين وهذا يشعرني بالثقة الكاملة
+                    </div>
+                    
+                    <div class="testimonial">
+                        أدعو كل من يستطيع المساهمة أن يفعل ذلك. الأطفال يحتاجون مساعدتنا العاجلة الآن أكثر من أي وقت مضى لضمان مستقبل أفضل لهم
+                    </div>
+                </div>
+            </section>
+
+            <!-- Share Section -->
+            <section class="content-section share-section">
+                <h2>📱 شارك الحملة مع أصدقائك</h2>
+                <p>كل مشاركة تساعد في الوصول لمتبرعين جدد وإنقاذ المزيد من الأطفال</p>
+                
+                <div class="share-buttons">
+                    <button class="share-btn whatsapp" type="button" aria-label="مشاركة عبر واتساب">
+                        📱 واتساب
+                    </button>
+                    <button class="share-btn facebook" type="button" aria-label="مشاركة عبر فيسبوك">
+                        📘 فيسبوك
+                    </button>
+                    <button class="share-btn twitter" type="button" aria-label="مشاركة عبر تويتر">
+                        🐦 تويتر
+                    </button>
+                    <button class="share-btn telegram" type="button" aria-label="مشاركة عبر تيليجرام">
+                        ✈️ تيليجرام
+                    </button>
+                </div>
+            </section>
 
             <!-- Contact Section -->
+            <section class="content-section contact-section">
+                <h2>📞 لديك سؤال؟ تواصل معنا</h2>
+                
+                <div class="contact-form">
+                    <form id="contactFormAr" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nameAr">الاسم الكامل *</label>
+                                <input type="text" id="nameAr" name="name" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="emailAr">البريد الإلكتروني *</label>
+                                <input type="email" id="emailAr" name="email" required aria-required="true">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subjectAr">موضوع الاستفسار *</label>
+                            <select id="subjectAr" name="subject" required aria-required="true">
+                                <option value="">اختر الموضوع</option>
+                                <option value="donation">استفسار عن التبرع</option>
+                                <option value="impact">كيفية استخدام التبرعات</option>
+                                <option value="volunteer">التطوع معنا</option>
+                                <option value="partnership">شراكة أو رعاية</option>
+                                <option value="media">استفسار إعلامي</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="messageAr">رسالتك *</label>
+                            <textarea id="messageAr" 
+                                     name="message" 
+                                     placeholder="اكتب سؤالك أو استفسارك هنا..." 
+                                     required 
+                                     aria-required="true">
+                            </textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">📧 إرسال الرسالة</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <h4>📞 طرق التواصل الأخرى</h4>
+                        <p>📧 البريد الإلكتروني: <a href="mailto:aa9896164@gmail.com">aa9896164@gmail.com</a></p>
+                        <p>🕐 أوقات الرد: 24/7 (نرد خلال 24 ساعة)</p>
+                        <p>🔒 جميع المعلومات سرية ومحمية بالكامل</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <h3>شكراً لك على اهتمامك ومساعدتك</h3>
+                <p>معاً نستطيع إحداث الفرق في حياة الأطفال وصنع مستقبل أفضل لهم</p>
+                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                    هذه حملة خيرية شفافة وموثقة | جميع التبرعات تذهب مباشرة للمحتاجين
+                </p>
+                <p style="font-size: 0.8rem; margin-top: 15px;">
+                    © 2024 حملة الأمل لغزة - جميع الحقوق محفوظة
+                </p>
+            </footer>
+        </div>
+
+        <!-- ENGLISH CONTENT -->
+        <div class="lang-content" id="content-en">
+            <!-- Hero Section -->
+            <section class="content-section hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">Together for Gaza's Children</h1>
+                    <p class="hero-subtitle">Be part of hope - Help save innocent children's lives</p>
+                    
+                    <div class="urgency-banner">
+                        ⏰ Time is running out - Every minute counts in saving lives
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill">
+                                65% of goal reached
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics Section -->
+            <section class="content-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="2300000">2.3M</div>
+                        <div class="stat-label">Children need help</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="50000">50K+</div>
+                        <div class="stat-label">Generous donors</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="24">24/7</div>
+                        <div class="stat-label">Continuous aid</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Donation Section -->
+            <section class="content-section donation-section">
+                <h2>💝 Donate Now and Make a Difference</h2>
+                
+                <div class="payment-grid">
+                    <!-- Chuffed Option -->
+                    <div class="payment-card">
+                        <h3>🌟 Donate via Chuffed</h3>
+                        <p style="color: var(--text-light); margin-bottom: 20px;">Trusted donation platform worldwide</p>
+                        
+                        <div class="chuffed-container">
+                            <iframe width="100%" height="380" 
+                                    src="https://chuffed.org/iframe/124859/25aae1" 
+                                    frameborder="0" 
+                                    allowfullscreen 
+                                    style="max-width:300px;"
+                                    sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+                                    title="Chuffed Donation Widget">
+                            </iframe>
+                        </div>
+                        
+                        <div class="fallback-section">
+                            <h4>💡 Or donate directly</h4>
+                            <div class="fallback-grid">
+                                <a href="https://chuffed.org/project/gaza-children-emergency-relief" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="fallback-btn">
+                                    Donate via Chuffed
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PayPal Option -->
+                    <div class="payment-card">
+                        <h3>💳 Direct Donation - PayPal</h3>
+                        <p style="color: var(--text-light); margin-bottom: 20px;">Donate securely without leaving the site</p>
+                        
+                        <div class="amount-section">
+                            <label class="amount-label">Select donation amount:</label>
+                            <div class="amount-grid">
+                                <button class="amount-btn selected" data-amount="25" type="button">$25</button>
+                                <button class="amount-btn" data-amount="50" type="button">$50</button>
+                                <button class="amount-btn" data-amount="100" type="button">$100</button>
+                                <button class="amount-btn" data-amount="200" type="button">$200</button>
+                            </div>
+                            
+                            <div class="custom-amount">
+                                <label for="customAmountEn">Or enter a custom amount:</label>
+                                <input type="number" 
+                                       id="customAmountEn" 
+                                       placeholder="e.g., 75" 
+                                       min="1" 
+                                       max="10000">
+                            </div>
+                        </div>
+                        
+                        <div class="selected-amount show" id="selectedAmountEn">
+                            <div style="font-size: 16px; margin-bottom: 5px;">Selected amount:</div>
+                            <div class="amount-display">$<span id="amountDisplayEn">25</span></div>
+                        </div>
+                        
+                        <div class="paypal-container" id="paypalContainerEn">
+                            <div class="paypal-loading">
+                                Loading PayPal buttons...
+                            </div>
+                        </div>
+                        
+                        <div class="fallback-section">
+                            <h4>💡 Alternative payment methods</h4>
+                            <div class="fallback-grid">
+                                <a href="https://paypal.me/hope4gaza/25" target="_blank" rel="noopener noreferrer" class="fallback-btn">$25</a>
+                                <a href="https://paypal.me/hope4gaza/50" target="_blank" rel="noopener noreferrer" class="fallback-btn">$50</a>
+                                <a href="https://paypal.me/hope4gaza/100" target="_blank" rel="noopener noreferrer" class="fallback-btn">$100</a>
+                                <a href="https://paypal.me/hope4gaza/200" target="_blank" rel="noopener noreferrer" class="fallback-btn">$200</a>
+                                <a href="https://paypal.me/hope4gaza" target="_blank" rel="noopener noreferrer" class="fallback-btn">Custom</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Impact Section -->
+            <section class="content-section">
+                <h2 style="text-align: center; margin-bottom: 40px;">🎯 Your Impact</h2>
+                
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <h3>🍞 $25</h3>
+                        <p>Provides nutritious meals for a child for one full week with all essential nutrients</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>💊 $50</h3>
+                        <p>Provides essential medicines and medical supplies necessary to save lives</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>🏠 $100</h3>
+                        <p>Provides temporary safe and warm shelter for a displaced family with basic necessities</p>
+                    </div>
+                    <div class="impact-card">
+                        <h3>📚 $200</h3>
+                        <p>Provides educational supplies and school materials for dozens of children to continue their education</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="content-section testimonials-section">
+                <h2>💬 Donor Testimonials</h2>
+                
+                <div class="testimonials">
+                    <div class="testimonial">
+                        I felt immense joy when I contributed to this campaign. Every dollar goes to help innocent children and save their lives from daily suffering
+                    </div>
+                    
+                    <div class="testimonial">
+                        The transparency in this campaign is outstanding. I can clearly see how my donations are being used to help children in need and this gives me complete confidence
+                    </div>
+                    
+                    <div class="testimonial">
+                        I urge everyone who can contribute to do so. Children need our urgent help now more than ever before to ensure a better future for them
+                    </div>
+                </div>
+            </section>
+
+            <!-- Share Section -->
+            <section class="content-section share-section">
+                <h2>📱 Share the campaign with your friends</h2>
+                <p>Every share helps us reach new donors and save more children</p>
+                
+                <div class="share-buttons">
+                    <button class="share-btn whatsapp" type="button" aria-label="Share via WhatsApp">
+                        📱 WhatsApp
+                    </button>
+                    <button class="share-btn facebook" type="button" aria-label="Share via Facebook">
+                        📘 Facebook
+                    </button>
+                    <button class="share-btn twitter" type="button" aria-label="Share via Twitter">
+                        🐦 Twitter
+                    </button>
+                    <button class="share-btn telegram" type="button" aria-label="Share via Telegram">
+                        ✈️ Telegram
+                    </button>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="content-section contact-section">
+                <h2>📞 Have a Question? Contact Us</h2>
+                
+                <div class="contact-form">
+                    <form id="contactFormEn" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nameEn">Full Name *</label>
+                                <input type="text" id="nameEn" name="name" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="emailEn">Email Address *</label>
+                                <input type="email" id="emailEn" name="email" required aria-required="true">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subjectEn">Inquiry Subject *</label>
+                            <select id="subjectEn" name="subject" required aria-required="true">
+                                <option value="">Select Subject</option>
+                                <option value="donation">Donation Inquiry</option>
+                                <option value="impact">How donations are used</option>
+                                <option value="volunteer">Volunteer with us</option>
+                                <option value="partnership">Partnership or Sponsorship</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="messageEn">Your Message *</label>
+                            <textarea id="messageEn" 
+                                     name="message" 
+                                     placeholder="Write your question or inquiry here..." 
+                                     required 
+                                     aria-required="true">
+                            </textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">📧 Send Message</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <h4>📞 Other Contact Methods</h4>
+                        <p>📧 Email: <a href="mailto:aa9896164@gmail.com">aa9896164@gmail.com</a></p>
+                        <p>🕐 Response time: 24/7 (We respond within 24 hours)</p>
+                        <p>🔒 All information is confidential and fully protected</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <h3>Thank you for your care and assistance</h3>
+                <p>Together we can make a difference in children's lives and create a better future for them</p>
+                <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                    This is a transparent and documented charity campaign | All donations go directly to those in need
+                </p>
+                <p style="font-size: 0.8rem; margin-top: 15px;">
+                    © 2024 Hope for Gaza Campaign - All rights reserved
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        'use strict';
+
+        // ===== GLOBAL VARIABLES =====
+        let selectedAmount = 25;
+        let currentLanguage = 'ar';
+        let paypalReady = false;
+        let analyticsReady = false;
+
+        // ===== INITIALIZATION =====
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeApp();
+        });
+
+        function initializeApp() {
+            console.log('🚀 Initializing Gaza Children Campaign Website...');
+            
+            // Check analytics
+            if (typeof gtag !== 'undefined') {
+                analyticsReady = true;
+                console.log('✅ Google Analytics loaded');
+            }
+            
+            // Initialize components
+            initializeLanguageSwitcher();
+            initializeAmountSelection();
+            initializeContactForms();
+            initializeShareButtons();
+            loadLanguagePreference();
+            
+            // Start animations
+            setTimeout(() => {
+                animateProgressBar();
+                animateCounters();
+                initializeScrollAnimations();
+            }, 1000);
+            
+            // Initialize PayPal
+            setTimeout(initializePayPal, 2000);
+            
+            console.log('✅ Website initialized successfully');
+        }
+
+        // ===== LANGUAGE MANAGEMENT =====
+        function initializeLanguageSwitcher() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    switchLanguage(lang);
+                });
+            });
+        }
+
+        function switchLanguage(lang) {
+            if (!lang || currentLanguage === lang) return;
+            
+            console.log(`🌐 Switching to language: ${lang}`);
+            currentLanguage = lang;
+            
+            // Track language change
+            trackEvent('engagement', 'language_change', lang);
+            
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            const selectedContent = document.getElementById(`content-${lang}`);
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+            }
+            
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            const activeButton = document.querySelector(`[data-lang="${lang}"]`);
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+            
+            // Update page direction and language
+            const body = document.body;
+            if (lang === 'ar') {
+                body.setAttribute('dir', 'rtl');
+                body.setAttribute('lang', 'ar');
+            } else {
+                body.setAttribute('dir', 'ltr');
+                body.setAttribute('lang', lang);
+            }
+            
+            // Update page title
+            const titles = {
+                'ar': 'معاً من أجل أطفال غزة - حملة التبرعات الإنسانية',
+                'en': 'Together for Gaza\'s Children - Humanitarian Donation Campaign',
+                'fr': 'Ensemble pour les Enfants de Gaza - Campagne de Dons Humanitaires',
+                'es': 'Juntos por los Niños de Gaza - Campaña de Donaciones Humanitarias'
+            };
+            
+            document.title = titles[lang] || titles['ar'];
+            
+            // Save language preference
+            try {
+                localStorage.setItem('preferred-language', lang);
+            } catch(e) {
+                console.warn('Could not save language preference:', e);
+            }
+            
+            // Re-render PayPal buttons for new language
+            if (paypalReady) {
+                setTimeout(() => renderPayPalButtons(), 500);
+            }
+        }
+        
+        function loadLanguagePreference() {
+            try {
+                const savedLang = localStorage.getItem('preferred-language') || 'ar';
+                switchLanguage(savedLang);
+            } catch(e) {
+                console.warn('Could not load language preference:', e);
+                switchLanguage('ar');
+            }
+        }
+
+        // ===== AMOUNT SELECTION =====
+        function initializeAmountSelection() {
+            // Initialize amount buttons
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('amount-btn')) {
+                    const amount = parseInt(e.target.getAttribute('data-amount'));
+                    if (amount) {
+                        selectAmount(amount);
+                    }
+                }
+            });
+            
+            // Initialize custom amount inputs
+            const customInputs = ['customAmountAr', 'customAmountEn'];
+            customInputs.forEach(inputId => {
+                const input = document.getElementById(inputId);
+                if (input) {
+                    input.addEventListener('input', handleCustomAmountInput);
+                }
+            });
+        }
+
+        function selectAmount(amount) {
+            if (!amount || isNaN(amount) || amount < 1) return;
+            
+            selectedAmount = amount;
+            console.log(`💰 Amount selected: ${amount}`);
+            
+            // Update visual selection in current language
+            const currentContent = document.querySelector('.lang-content.active');
+            if (currentContent) {
+                // Clear all selections in current view
+                currentContent.querySelectorAll('.amount-btn').forEach(btn => {
+                    btn.classList.remove('selected');
+                });
+                
+                // Select the clicked amount
+                const targetBtn = currentContent.querySelector(`[data-amount="${amount}"]`);
+                if (targetBtn) {
+                    targetBtn.classList.add('selected');
+                }
+            }
+            
+            // Clear custom inputs
+            const customInputs = ['customAmountAr', 'customAmountEn'];
+            customInputs.forEach(inputId => {
+                const input = document.getElementById(inputId);
+                if (input) input.value = '';
+            });
+            
+            // Update display
+            updateAmountDisplay();
+            
+            // Re-render PayPal buttons
+            if (paypalReady) {
+                renderPayPalButtons();
+            }
+            
+            // Track amount selection
+            trackEvent('donation', 'amount_select', `amount_${amount}`, amount);
+        }
+
+        function handleCustomAmountInput(e) {
+            const value = parseInt(e.target.value);
+            if (value && value > 0 && value <= 10000) {
+                selectedAmount = value;
+                
+                // Remove selection from preset buttons
+                const currentContent = document.querySelector('.lang-content.active');
+                if (currentContent) {
+                    currentContent.querySelectorAll('.amount-btn').forEach(btn => {
+                        btn.classList.remove('selected');
+                    });
+                }
+                
+                // Update display
+                updateAmountDisplay();
+                
+                // Re-render PayPal buttons
+                if (paypalReady) {
+                    renderPayPalButtons();
+                }
+                
+                // Track custom amount
+                trackEvent('donation', 'custom_amount', `amount_${value}`, value);
+            }
+        }
+
+        function updateAmountDisplay() {
+            const displays = ['amountDisplayAr', 'amountDisplayEn'];
+            const containers = ['selectedAmountAr', 'selectedAmountEn'];
+            
+            displays.forEach(id => {
+                const display = document.getElementById(id);
+                if (display) display.textContent = selectedAmount;
+            });
+            
+            containers.forEach(id => {
+                const container = document.getElementById(id);
+                if (container) container.classList.add('show');
+            });
+        }
+
+        // ===== PAYPAL INTEGRATION =====
+        function initializePayPal() {
+            console.log('💳 Initializing PayPal...');
+            
+            if (typeof paypal === 'undefined') {
+                console.warn('⚠️ PayPal SDK not loaded, retrying...');
+                setTimeout(initializePayPal, 1000);
+                return;
+            }
+            
+            paypalReady = true;
+            console.log('✅ PayPal SDK loaded successfully');
+            
+            // Set default amount and render buttons
+            selectAmount(25);
+            renderPayPalButtons();
+        }
+
+        function renderPayPalButtons() {
+            if (!paypalReady || typeof paypal === 'undefined') {
+                console.warn('⚠️ PayPal not ready for rendering buttons');
+                return;
+            }
+
+            const containerId = currentLanguage === 'ar' ? 'paypalContainerAr' : 'paypalContainerEn';
+            const container = document.getElementById(containerId);
+            
+            if (!container) {
+                console.warn(`⚠️ PayPal container not found: ${containerId}`);
+                return;
+            }
+            
+            console.log(`🔄 Rendering PayPal buttons for ${currentLanguage} with amount ${selectedAmount}`);
+            
+            // Clear existing buttons
+            container.innerHTML = '';
+            container.classList.add('loaded');
+            
+            // Render PayPal buttons
+            paypal.Buttons({
+                style: {
+                    layout: 'horizontal',
+                    color: 'blue',
+                    shape: 'rect',
+                    label: 'donate',
+                    height: 50
+                },
+                
+                createOrder: function(data, actions) {
+                    console.log(`💰 Creating PayPal order for ${selectedAmount}`);
+                    
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: selectedAmount.toString(),
+                                currency_code: 'USD'
+                            },
+                            description: 'Gaza Children Emergency Relief Donation',
+                            custom_id: `gaza_donation_${Date.now()}_${selectedAmount}`,
+                            soft_descriptor: 'GAZA CHILDREN'
+                        }],
+                        application_context: {
+                            brand_name: 'Hope for Gaza Campaign',
+                            locale: currentLanguage === 'ar' ? 'ar-EG' : 'en-US',
+                            user_action: 'PAY_NOW'
+                        }
+                    });
+                },
+                
+                onApprove: function(data, actions) {
+                    console.log('✅ PayPal payment approved, capturing...');
+                    
+                    return actions.order.capture().then(function(details) {
+                        console.log('🎉 Payment captured successfully:', details);
+                        
+                        // Track successful donation
+                        trackEvent('donation', 'success', 'paypal_sdk', selectedAmount);
+                        
+                        // Enhanced Analytics tracking
+                        if (analyticsReady) {
+                            gtag('event', 'purchase', {
+                                'transaction_id': details.id,
+                                'value': selectedAmount,
+                                'currency': 'USD',
+                                'items': [{
+                                    'item_id': 'gaza_donation',
+                                    'item_name': 'Gaza Children Relief Donation',
+                                    'category': 'Donation',
+                                    'quantity': 1,
+                                    'price': selectedAmount
+                                }]
+                            });
+                        }
+                        
+                        // Show success message
+                        showSuccessMessage(details);
+                        
+                        // Reset form
+                        resetDonationForm();
+                    });
+                },
+                
+                onError: function(err) {
+                    console.error('❌ PayPal Error:', err);
+                    trackEvent('donation', 'error', 'paypal_sdk');
+                    showErrorMessage();
+                },
+                
+                onCancel: function(data) {
+                    console.log('⏹️ PayPal payment cancelled:', data);
+                    trackEvent('donation', 'cancel', 'paypal_sdk');
+                }
+                
+            }).render('#' + containerId).catch(function(err) {
+                console.error('❌ Failed to render PayPal buttons:', err);
+                container.innerHTML = '<div class="paypal-loading">خطأ في تحميل PayPal. يرجى استخدام الروابط البديلة أدناه.</div>';
+            });
+        }
+
+        function showSuccessMessage(details) {
+            const messages = {
+                'ar': `🎉 شكراً لك!\n\nتم تسجيل تبرعك بمبلغ ${selectedAmount} بنجاح.\n\nرقم المعاملة: ${details.id}\n\nسنرسل لك إيصالاً على البريد الإلكتروني قريباً.\n\nجزاك الله خيراً على مساعدة أطفال غزة! 🇵🇸💙`,
+                'en': `🎉 Thank you!\n\nYour donation of ${selectedAmount} has been processed successfully.\n\nTransaction ID: ${details.id}\n\nYou will receive a receipt via email shortly.\n\nThank you for helping Gaza's children! 🇵🇸💙`,
+                'fr': `🎉 Merci!\n\nVotre don de ${selectedAmount} a été traité avec succès.\n\nID de transaction: ${details.id}\n\nVous recevrez un reçu par email bientôt.`,
+                'es': `🎉 ¡Gracias!\n\nSu donación de ${selectedAmount} ha sido procesada exitosamente.\n\nID de transacción: ${details.id}\n\nRecibirá un recibo por email pronto.`
+            };
+            
+            alert(messages[currentLanguage] || messages['ar']);
+        }
+
+        function showErrorMessage() {
+            const messages = {
+                'ar': '❌ حدث خطأ في عملية التبرع.\n\nيرجى المحاولة مرة أخرى أو استخدام الروابط البديلة أدناه.\n\nنعتذر عن الإزعاج.',
+                'en': '❌ An error occurred during donation.\n\nPlease try again or use the alternative links below.\n\nWe apologize for the inconvenience.',
+                'fr': '❌ Une erreur s\'est produite lors du don.\n\nVeuillez réessayer ou utiliser les liens alternatifs ci-dessous.',
+                'es': '❌ Ocurrió un error durante la donación.\n\nPor favor intente nuevamente o use los enlaces alternativos abajo.'
+            };
+            
+            alert(messages[currentLanguage] || messages['ar']);
+        }
+
+        function resetDonationForm() {
+            // Reset to default amount
+            selectAmount(25);
+            
+            // Clear custom inputs
+            document.querySelectorAll('[id^="customAmount"]').forEach(input => {
+                input.value = '';
+            });
+        }
+
+        // ===== SOCIAL SHARING =====
+        function initializeShareButtons() {
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('share-btn')) {
+                    const platform = Array.from(e.target.classList).find(cls => 
+                        ['whatsapp', 'facebook', 'twitter', 'telegram'].includes(cls)
+                    );
+                    
+                    if (platform) {
+                        handleSocialShare(platform);
+                    }
+                }
+            });
+        }
+
+        function handleSocialShare(platform) {
+            trackEvent('social', 'share', `${platform}_${currentLanguage}`);
+            
+            const url = window.location.href;
+            const messages = {
+                'ar': "🇵🇸 ساهم معنا في مساعدة أطفال غزة - حملة تبرعات إنسانية عاجلة\n\nكل تبرع يحدث فرقاً حقيقياً في حياة طفل بريء 💙\n\n#غزة #تبرعات #مساعدة_الأطفال #فلسطين",
+                'en': "🇵🇸 Help us support Gaza's children - Urgent humanitarian donation campaign\n\nEvery donation makes a real difference in an innocent child's life 💙\n\n#Gaza #Donations #HelpChildren #Palestine",
+                'fr': "🇵🇸 Aidez-nous à soutenir les enfants de Gaza - Campagne de dons humanitaires urgente\n\nChaque don fait une vraie différence 💙\n\n#Gaza #Dons #AideHumanitaire",
+                'es': "🇵🇸 Ayúdanos a apoyar a los niños de Gaza - Campaña urgente de donaciones humanitarias\n\nCada donación hace una diferencia real 💙\n\n#Gaza #Donaciones #AyudaHumanitaria"
+            };
+            
+            const message = messages[currentLanguage] || messages['ar'];
+            
+            switch(platform) {
+                case 'whatsapp':
+                    window.open(`https://wa.me/?text=${encodeURIComponent(message + "\n\n" + url)}`, '_blank', 'noopener,noreferrer');
+                    break;
+                    
+                case 'facebook':
+                    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank', 'noopener,noreferrer');
+                    break;
+                    
+                case 'twitter':
+                    const twitterMessage = message.substring(0, 240); // Twitter character limit
+                    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(twitterMessage)}&url=${encodeURIComponent(url)}`, '_blank', 'noopener,noreferrer');
+                    break;
+                    
+                case 'telegram':
+                    window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+                    break;
+            }
+        }
+
+        // ===== CONTACT FORMS =====
+        function initializeContactForms() {
+            const forms = ['contactFormAr', 'contactFormEn'];
+            
+            forms.forEach(formId => {
+                const form = document.getElementById(formId);
+                if (form) {
+                    form.addEventListener('submit', handleContactSubmit);
+                }
+            });
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            
+            // Validate required fields
+            if (!data.name || !data.email || !data.subject || !data.message) {
+                const errorMessages = {
+                    'ar': '⚠️ يرجى ملء جميع الحقول المطلوبة.',
+                    'en': '⚠️ Please fill in all required fields.',
+                    'fr': '⚠️ Veuillez remplir tous les champs requis.',
+                    'es': '⚠️ Por favor complete todos los campos requeridos.'
+                };
+                alert(errorMessages[currentLanguage] || errorMessages['ar']);
+                return;
+            }
+            
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                const errorMessages = {
+                    'ar': '⚠️ يرجى إدخال بريد إلكتروني صحيح.',
+                    'en': '⚠️ Please enter a valid email address.',
+                    'fr': '⚠️ Veuillez entrer une adresse email valide.',
+                    'es': '⚠️ Por favor ingrese una dirección de email válida.'
+                };
+                alert(errorMessages[currentLanguage] || errorMessages['ar']);
+                return;
+            }
+            
+            // Track form submission
+            trackEvent('contact', 'form_submit', data.subject);
+            
+            // Show success message
+            const successMessages = {
+                'ar': '✅ تم إرسال رسالتك بنجاح!\n\nسنرد عليك على البريد الإلكتروني خلال 24 ساعة.\n\nشكراً لاهتمامك بحملتنا.',
+                'en': '✅ Your message has been sent successfully!\n\nWe will respond to your email within 24 hours.\n\nThank you for your interest in our campaign.',
+                'fr': '✅ Votre message a été envoyé avec succès!\n\nNous répondrons à votre email dans 24 heures.\n\nMerci pour votre intérêt.',
+                'es': '✅ ¡Su mensaje ha sido enviado exitosamente!\n\nResponderemos a su email dentro de 24 horas.\n\nGracias por su interés.'
+            };
+            
+            alert(successMessages[currentLanguage] || successMessages['ar']);
+            
+            // Reset form
+            e.target.reset();
+            
+            // Log contact data (remove in production)
+            console.log('📧 Contact form submitted:', data);
+        }
+
+        // ===== ANIMATIONS =====
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            
+            counters.forEach(counter => {
+                const target = counter.innerText;
+                const card = counter.closest('.stat-card');
+                const countValue = card ? card.dataset.count : null;
+                
+                if (!countValue) return;
+                
+                const cleanTarget = parseInt(countValue);
+                if (isNaN(cleanTarget)) return;
+                
+                const increment = cleanTarget / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= cleanTarget) {
+                        counter.innerText = target;
+                        clearInterval(timer);
+                    } else {
+                        if (target.includes('M')) {
+                            counter.innerText = (current / 1000000).toFixed(1) + 'M';
+                        } else if (target.includes('K')) {
+                            counter.innerText = Math.floor(current / 1000) + 'K+';
+                        } else if (target.includes('/')) {
+                            counter.innerText = target; // Keep 24/7 as is
+                        } else {
+                            counter.innerText = Math.floor(current);
+                        }
+                    }
+                }, 30);
+            });
+        }
+
+        function animateProgressBar() {
+            const progressBar = document.getElementById('progressBar');
+            if (progressBar) {
+                // Start from 0% width
+                progressBar.style.width = '0%';
+                
+                // Animate to 65%
+                setTimeout(() => {
+                    progressBar.style.width = '65%';
+                }, 500);
+            }
+        }
+
+        function initializeScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe animated elements
+            document.querySelectorAll('.stat-card, .impact-card, .payment-card, .testimonial').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'all 0.6s ease';
+                observer.observe(el);
+            });
+        }
+
+        // ===== UTILITY FUNCTIONS =====
+        function trackEvent(category, action, label, value) {
+            if (analyticsReady && typeof gtag !== 'undefined') {
+                gtag('event', action, {
+                    'event_category': category,
+                    'event_label': label,
+                    'value': value || 1,
+                    'send_to': 'G-1Z7Z7VJMVB'
+                });
+                console.log(`📊 Event tracked: ${category} - ${action} - ${label}`);
+            } else {
+                console.log(`📊 Event logged: ${category} - ${action} - ${label}`);
+            }
+        }
+
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // ===== ERROR HANDLING =====
+        window.addEventListener('error', function(e) {
+            console.error('❌ Global error:', e.error);
+            trackEvent('error', 'javascript_error', e.message);
+        });
+
+        window.addEventListener('unhandledrejection', function(e) {
+            console.error('❌ Unhandled promise rejection:', e.reason);
+            trackEvent('error', 'promise_rejection', e.reason?.message || 'Unknown');
+        });
+
+        // ===== PERFORMANCE MONITORING =====
+        if ('performance' in window) {
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    try {
+                        const perfData = performance.getEntriesByType('navigation')[0];
+                        const loadTime = perfData.loadEventEnd - perfData.loadEventStart;
+                        
+                        if (loadTime > 0) {
+                            trackEvent('performance', 'page_load_time', 'milliseconds', Math.round(loadTime));
+                            console.log(`⚡ Page load time: ${Math.round(loadTime)}ms`);
+                        }
+                    } catch(e) {
+                        console.warn('⚠️ Could not measure performance:', e);
+                    }
+                }, 0);
+            });
+        }
+
+        // ===== ACCESSIBILITY =====
+        document.addEventListener('keydown', function(e) {
+            // Escape key functionality
+            if (e.key === 'Escape') {
+                // Close any open modals or dropdowns if needed
+            }
+            
+            // Enter key on buttons
+            if (e.key === 'Enter' && e.target.classList.contains('amount-btn')) {
+                e.target.click();
+            }
+            
+            // Tab navigation improvements
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-navigation');
+            }
+        });
+
+        // Remove keyboard navigation class on mouse use
+        document.addEventListener('mousedown', function() {
+            document.body.classList.remove('keyboard-navigation');
+        });
+
+        console.log('🎯 Gaza Children Campaign - Ready to help save lives! 🇵🇸💙');
+    </script>
+</body>
+</html>
